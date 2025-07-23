@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Bookworm Light Astro | Blog Template",
-    "base_url": "https://bookworm-light-astro.vercel.app",
+    "title": "BLUE POINT ART GALLERY",
+    "base_url": "https://bluepointart.uk",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "34",
-    "logo_text": "Bookworm Light"
+    "logo": "/images/logo.gif",
+    "logo_width": "70",
+    "logo_height": "140",
+    "logo_text": "bluepointart"
   },
 
   "settings": {
@@ -17,19 +17,19 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "Bookworm Light Astro Blog Template"
+    "meta_author": "Blue Point Art Gallery",
+    "meta_image": "/images/posts/BluePointArtLondonAbout.png",
+    "meta_description": "DIGITAL ENVIRONMENT FOR DOCUMENTARY, EDUCATIONAL AND CREATIVE ACTIVITIES"
   },
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Copyright © 2025 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2025 Blue Point Art Gallery"
   },
 
   "contactinfo": {
-    "address": "355 S Grand Ave <br/> Los Angeles, CA 90071",
-    "email": "info@bookworm.org",
-    "phone": "+800 567 1234"
+    "address": "",
+    "email": "info@bluepointart.uk",
+    "phone": ""
   }
 }

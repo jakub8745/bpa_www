@@ -5,7 +5,7 @@
 
 /* container */
 .container {
-  @apply max-w-[1000px]! px-4! md:px-8! mx-auto;
+  @apply max-w-[1400px]! px-4! md:px-8! mx-auto;
 }
 
 /* page heading */
@@ -184,3 +184,4 @@
 footer p a {
   @apply transition-all duration-200 hover:text-white;
 }
+

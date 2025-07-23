@@ -1,43 +1,93 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
-    },
-    {
       "name": "About",
       "url": "/about"
+    },
+    {
+      "name": "Archive [beta]",
+      "url": "https://archive.bluepointart.uk/"
+    },
+    {
+      "name": "3D exhibitions",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "The exhibition 'Vincenz's Dialogues - Views' ",
+          "url": "/vincenzs-dialogues-views"
+        },
+        {
+          "name": "webGl/webXR art installation 'Milkmaid's Pitcher'",
+          "url": "/milkmaids-pitcher"
+        },
+        {
+          "name": "The Dystopia of an Imitation by Jaroslaw Solecki",
+          "url": "/dystopia-of-imitation"
+        },
+        {
+          "name": "Norwid – szkice",
+          "url": "/norwid-szkice"
+        },
+        {
+          "name": "Images of Identity",
+          "url": "/images-of-identity"
+        },
+        {
+          "name": "WAKE-UP CALL",
+          "url": "/wake-up-call"
+        },
+        {
+          "name": "Lockdowns by Joanna Ciechanowska",
+          "url": "/lockdowns-ciechanowska"
+        }
+      ]
+    },
+    {
+      "name": "Educational Projects",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "'Unvelling the Heritage of Krystyna Bednarczyk'",
+          "url": "/ar-heritage-app"
+        },
+        {
+          "name": "Dialogue on Fate and Soul. Stanisław Vincenz (1888–1971)",
+          "url": "/fate-and-soul"
+        },
+        {
+          "name": "Norwid – szkice",
+          "url": "/norwid-szkice"
+        }
+      ]
+    },
+    {
+      "name": "Publishing",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska, Justyna Gorzkowicz",
+          "url": "/publishing-towards-rediscovery"
+        },
+        {
+          "name": "The Dystopia of an Imitation – Jarosław Solecki, ed. Justyna Gorzkowicz",
+          "url": "/publishing-dystopia-of-imitation"
+        },
+        {
+          "name": "Ten Years & Counting - Martin Taylor, Exhibition Catalogue",
+          "url": "/publishing-tenyearsandcounting"
+        }
+      ]
     },
     {
       "name": "Contact",
       "url": "/contact"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
     }
   ],
   "footer": [
@@ -48,10 +98,6 @@
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
     },
     {
       "name": "Privacy Policy",

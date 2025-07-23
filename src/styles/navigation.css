@@ -4,7 +4,7 @@
 }
 
 .navbar-brand img {
-  @apply h-auto max-w-[170px] sm:h-auto sm:max-w-full;
+  @apply h-auto max-w-[110px] sm:h-auto sm:max-w-full;
 }
 
 .navbar-nav {
@@ -16,7 +16,7 @@
 }
 
 .nav-link {
-  @apply p-3 text-lg font-semibold text-dark transition hover:text-primary md:p-4;
+  @apply p-3 text-xs font-semibold text-dark transition hover:text-primary md:p-4;
 }
 
 .nav-dropdown-list {
@@ -28,8 +28,9 @@
 }
 
 .nav-dropdown-link {
-  @apply block min-w-[150px] py-1 text-[17px] font-semibold text-dark transition hover:text-primary;
+  @apply block min-w-[150px] py-1 text-[17px] font-semibold text-dark transition hover:text-primary transform hover:translate-x-[2px];
 }
+
 
 /* search style */
 .search-modal {

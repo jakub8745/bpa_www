@@ -17,7 +17,7 @@ const {
 } = config.site;
 ---
 
-<a href="/" class="navbar-brand block">
+<a href="/" class="navbar-brand block flex justify-center items-center h-full mt-4 mb-6">
   {
     src || logo ? (
       <Image
@@ -25,10 +25,7 @@ const {
         height={logo_height.replace("px", "") * 2}
         src={src ? src : logo}
         alt={title}
-        style={{
-          height: logo_height.replace("px", "") + "px",
-          width: logo_width.replace("px", "") + "px",
-        }}
+
       />
     ) : logo_text ? (
       logo_text

@@ -53,3 +53,15 @@ strong {
 img {
   @apply inline-block;
 }
+
+p {
+  @apply font-secondary font-normal;
+}
+
+.title {
+  @apply font-playfair;
+}
+
+.tracking-custom {
+  letter-spacing: -0.045em;
+}

@@ -16,3 +16,5 @@
   @import "./navigation.css";
   @import "./buttons.css";
 }
+
+@import 'src/styles/fonts.css';
