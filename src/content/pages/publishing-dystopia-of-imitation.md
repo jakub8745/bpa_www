@@ -1,6 +1,7 @@
 ---
-title: "publishing-dystopia-of-imitation"
-description: "this is meta description"
+title: "Dystopia of imitation"
+description: "Jarosław Solecki explores materiality in art through stone, clay, and 3D graphics, linking digital creation to the performative turn in the humanities."
+image: "/images/posts/Dystopia-of-an-Imitation-Solecki-Gorzkowicz.png"
 draft: false
 ---
 “Jaroslaw Solecki’s The Dystopia of an Imitation presents a creative way of exploring
@@ -18,5 +19,4 @@ The publication “The Dystopia of an Imitation” was prepared as part of the g
 
 Supported by the Embassy of the Republic of Poland in London and The Polonia Aid Foundation Trust (PAFT)
 
-[Download “The Dystopia of an Imitation” booklet from](https://zenodo.org/record/6633680) https://zenodo.org/record/6633680
-)
+[Download “The Dystopia of an Imitation” booklet from](https://zenodo.org/record/6633680) <https://zenodo.org/record/6633680>)

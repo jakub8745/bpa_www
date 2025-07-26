@@ -1,5 +1,5 @@
 ---
-title: "towards-rediscovery-lockdowns"
+title: "Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska"
 description: "this is meta description"
 draft: false
 ---
