@@ -26,8 +26,8 @@ The trilingual London exhibition was realised in cooperation with the Union of P
 
 The virtual educational exhibition at Blue Point Art Gallery London moves the individual narrative boards of the exhibition “Dialogue on Fate and Soul. Stanisław Vincenz (1888—1971)” to the bookmarks of the website. The digitisation of the exhibition is an activity which expands the international character of humanistic research on Polish culture and literature, and in particular on the work of Stanisław Vincenz, organically connected with the Hutsul culture.
 
-### visit the project website (click on the image orbelow):
+#### visit the project website (click on the image orbelow)
 
-[![Educational exhibition Dialogue on Fate and Soul Stanisław Vincenz](/images/posts/fate-and-soul-exhibit.png)](https://stanislaw-vincenz.puno.ac.uk/educational-exhibition/)
+[![Educational exhibition Dialogue on Fate and Soul Stanisław Vincenz](/images/posts/fate-and-soul-exhibit.jpg)](https://stanislaw-vincenz.puno.ac.uk/educational-exhibition/)
 
-### https://stanislaw-vincenz.puno.ac.uk/educational-exhibition/
+<https://stanislaw-vincenz.puno.ac.uk/educational-exhibition/>

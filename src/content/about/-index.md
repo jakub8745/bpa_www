@@ -5,7 +5,7 @@ image: "/images/BPAaboutImage.jpg"
 draft: false
 
 what_i_do:
-  title: "We do many things, and we do them well"
+  title: ""
   items:
   - title: "Hosting 3D Exhibitions"
     description: "We host the most innovative virtual and AR art exhibitions, like 'The Dystopia of Imitation', accessible through web browsers without additional applications."

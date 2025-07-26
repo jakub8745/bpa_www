@@ -2,7 +2,7 @@
 title: "Lockdowns by Joanna Ciechanowska"
 description: "meta description"
 date: 2020-08-15T05:00:00Z
-image: "/images/posts/lockdowns-joanna_ciechanowska.jpg"
+image: ""
 categories: ["Exhibition"]
 authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
 tags: ["Joanna Ciechanowska", "Lockdowns", "art", "Exhibition", "3D"]
@@ -14,7 +14,7 @@ Joanna Ciechanowska’s works presented at the Lockdowns exhibition offer a spec
 [![visit an exhibition 'Lockdowns' by Joanna Ciechanowska](../../../public/images/posts/lockdowns-joanna_ciechanowska.jpg)](https://lockdowns.bluepointart.uk/)
 Lets meet Joanna Ciechanowska
 
-The bilingual publication, containing a longer theoretical and curatorial text and an album with the artist’s works: Justyna Gorzkowicz, Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska  / W stronę ponownego odkrycia: LOCKDOWNS – Joanna Ciechanowska 
+The bilingual publication, containing a longer theoretical and curatorial text and an album with the artist’s works: Justyna Gorzkowicz, Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska  / W stronę ponownego odkrycia: LOCKDOWNS – Joanna Ciechanowska
 Full version of the book will come soon at PUNO Press.
 
 [EXCERPT FROM CONTENTS / WYBÓR ZAWARTOŚCI – Free PDF](https://bafybeie4p55kauy6ejabn6dko3myb355isvzi6cnse37auzoupsdzh4q6m.ipfs.w3s.link/)
