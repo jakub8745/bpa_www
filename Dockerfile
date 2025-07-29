@@ -1,15 +1,17 @@
-FROM node:lts
+FROM node:alpine
 
-# Set working directory
 WORKDIR /app
 
-# Copy everything (if using a monorepo, adjust)
-COPY . .
+# Copy package.json and lockfile first for faster build cache
+COPY package*.json ./
+# (Optional: add this line if you use pnpm/yarn, or copy the right lock file)
+# COPY pnpm-lock.yaml* yarn.lock* ./
 
-# Install dependencies
 RUN npm install
 
-# Build Astro site
+# Copy the rest of your files
+COPY . .
+
 RUN npm run build
 
-# Expose the dist folder as static (Fleek picks this up automatically)
+CMD ["npx", "serve", "dist"]
