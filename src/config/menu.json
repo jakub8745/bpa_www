@@ -1,8 +1,8 @@
 {
   "main": [
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Home",
+      "url": "/"
     },
     {
       "name": "Archive [beta]",
@@ -49,7 +49,7 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "'Unvelling the Heritage of Krystyna Bednarczyk'",
+          "name": "Unvelling the Heritage of Krystyna Bednarczyk",
           "url": "/ar-heritage-app"
         },
         {
@@ -59,6 +59,21 @@
         {
           "name": "Norwid – szkice",
           "url": "/norwid-szkice"
+        }
+      ]
+    },
+    {
+      "name": "Other Projects",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "The ecstasy of st. Teresa",
+          "url": "/the-ecstasy-of-st-teresa"
+        },
+        {
+          "name": "DARIAH Annual Event",
+          "url": "/dariah-annual-event-after"
         }
       ]
     },

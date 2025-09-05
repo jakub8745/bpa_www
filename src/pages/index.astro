@@ -1,6 +1,16 @@
 ---
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
+import { getEntry, render, type CollectionEntry } from "astro:content";
+
+// load about entry
+const aboutEntry = (await getEntry(
+  "about",
+  "-index",
+)) as CollectionEntry<"about">;
+console.log(aboutEntry.data);
+const { Content } = await render(aboutEntry);
+
 import Pagination from "@/layouts/components/Pagination.astro";
 import Posts from "@/layouts/Posts.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
@@ -13,8 +23,15 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
 
 <Base>
-  <section class="section">
+  <section class="section pt-10">
     <div class="container">
+      <section class="mx-auto my-12 mt-8">
+        <h2 class="text-2xl font-bold mb-6">{aboutEntry.data.title}</h2>
+        <div class="prose prose-lg max-w-none">
+          <Content />
+        </div>
+      </section>
+
       <Posts posts={currentPosts} className="mb-16" />
       <Pagination currentPage={1} totalPages={totalPages} />
     </div>

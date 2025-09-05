@@ -22,15 +22,15 @@ const { title, description, authors, categories, image, date, tags } =
   <div class="container">
     <article class="row justify-center">
       <div class="md:col-10 text-center">
-        <h1 set:html={markdownify(title)} class="h2" />
-        <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
+        <h1 set:html={markdownify(title)} class="big-title" />
+        <ul class="mt-4 flex flex-wrap items-center justify-center text-text h3">
           <li class="mx-3">
             {
               allAuthors
                 .filter((author) =>
                   authors
                     .map((author: string) => slugify(author))
-                    .includes(slugify(author.data.title))
+                    .includes(slugify(author.data.title)),
                 )
                 .map((author) => (
                   <a
