@@ -24,7 +24,7 @@ Requirements
 To visit Blue Point Art Gallery you need a laptop, PC or smartphone with Internet access and a web browser.
 How to participate in the exhibition?
 
-[Virtual Biennale Prague 2020: Wake-Up Call will be open at the Blue Point Art Gallery from 27th November 2020 until 27th January 2021](https://wakeupcall.bluepointart.uk/)
+[Virtual Biennale Prague 2020: Wake-Up Call will be open at the Blue Point Art Gallery from 27th November 2020 until 27th January 2021](https://archive.bluepointart.uk/#wakeupcall)
 
 The exhibition will be accompanied by the publication Blue Point Art Series PUNO Press: Wake-Up Call containing texts about Virtual Biennale Prague and the catalogue with the winning posters.
 

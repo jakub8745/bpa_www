@@ -11,7 +11,7 @@ draft: false
 
 Joanna Ciechanowska’s works presented at the Lockdowns exhibition offer a specific understanding of isolation. They are anchored in multi-dimensional references to social and historical time, but above all – to personal time. Despite revealing fears related to participating in an unknown situation, they steer clear of catastrophism. They become the artist’s inner painting and poetic journey. They are a flash of rediscovery of those few simple images in the presence of which the human heart is closedand opened for the first time.
 
-[![visit an exhibition 'Lockdowns' by Joanna Ciechanowska](../../../public/images/posts/lockdowns-joanna_ciechanowska.jpg)](https://lockdowns.bluepointart.uk/)
+[![visit an exhibition 'Lockdowns' by Joanna Ciechanowska](../../../public/images/posts/lockdowns-joanna_ciechanowska.jpg)](https://archive.bluepointart.uk/#lockdowns)
 Lets meet Joanna Ciechanowska
 
 The bilingual publication, containing a longer theoretical and curatorial text and an album with the artist’s works: Justyna Gorzkowicz, Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska  / W stronę ponownego odkrycia: LOCKDOWNS – Joanna Ciechanowska

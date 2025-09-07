@@ -35,6 +35,7 @@ const { main }: { main: NavigationLink[] } = menu;
       DIGITAL ENVIRONMENT FOR DOCUMENTARY, EDUCATIONAL AND CREATIVE ACTIVITIES
     </p>
   </div>
+
   <div class="order-1 border border-gray-300 font-secondary uppercase">
     <nav
       class="navbar container flex justify-between items-center flex-wrap border-l border-gray-300 border-r border-gray-300"
@@ -67,16 +68,16 @@ const { main }: { main: NavigationLink[] } = menu;
 
       <ul
         id="nav-menu"
-        class="navbar-nav order-3 hidden w-full peer-checked:block md:order-2 lg:order-2 xl:flex xl:w-auto 2xl:w-auto 3xl:w-auto 4xl:w-auto  active:scale-97 transition-transform duration-150"
+        class="navbar-nav order-3 hidden w-full peer-checked:block md:order-2 lg:order-2 xl:flex xl:w-auto 2xl:w-auto 3xl:w-auto 4xl:w-auto active:scale-97 transition-transform duration-150"
       >
         {
           main.map((menu) => (
             <>
               {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown relative">
+                <li class="nav-item nav-dropdown relative group">
+                  <!-- checkbox toggle instead of radio -->
                   <input
-                    type="radio"
-                    name="nav-accordion"
+                    type="checkbox"
                     id={`toggle-${menu.name}`}
                     class="peer hidden"
                   />
@@ -91,7 +92,9 @@ const { main }: { main: NavigationLink[] } = menu;
                     </svg>
                   </label>
 
-                  <ul class="nav-dropdown-list hidden peer-checked:block md:absolute md:top-full md:left-0 md:hidden md:group-hover:block bg-white shadow-lg">
+                  <ul
+                    class="nav-dropdown-list hidden peer-checked:block group-hover:block md:absolute md:top-full md:left-0 bg-white shadow-lg"
+                  >
                     {menu.children?.map((child) => (
                       <li class="nav-dropdown-item">
                         <a
@@ -115,6 +118,7 @@ const { main }: { main: NavigationLink[] } = menu;
           ))
         }
       </ul>
+
       <div class="order-2 ml-auto flex">
         <a
           class="mr-4 inline-block cursor-pointer p-2 text-xl text-dark transition hover:text-primary md:mr-0"
