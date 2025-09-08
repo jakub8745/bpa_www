@@ -8,9 +8,9 @@ authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
 tags: ["PUNO","Polish University Abroad", "85-lecie PUNO*", "3d exhibitions", "virtual exposition", "in London"]
 categories: ["3d exhibitions", "heritage", "educational"]
 ---
-Prezentowana ekspozycja jest cyfrową kontynuacją projektu artystycznego zapoczątkowanego podczas jubileuszu 80-lecia PUNO. Obecna odsłona, przygotowana z okazji 85-lecia Uczelni, została poszerzona o nowy portret prof. Włodzimierza Miera-Jędrzejowicza, obecnego Rektora PUNO, i przeniesiona do wirtualnej przestrzeni Blue Point Art Gallery. 
+Prezentowana ekspozycja jest cyfrową kontynuacją projektu artystycznego zapoczątkowanego podczas jubileuszu 80-lecia PUNO. Obecna odsłona, przygotowana z okazji 85-lecia Uczelni, została poszerzona o nowy portret prof. Włodzimierza Miera-Jędrzejowicza, obecnego Rektora PUNO, i przeniesiona do wirtualnej przestrzeni Blue Point Art Gallery.
 
-Centralnym elementem wystawy są cyfrowe kolaże portretowe, które – zestawione w środowisku 3D – tworzą spójną narrację wizualną o PUNO jako konstrukcie ideowym: miejscu wielu tożsamości i jednocześnie trwałym punkcie odniesienia dla polskiej nauki na emigracji. 
+Centralnym elementem wystawy są cyfrowe kolaże portretowe, które – zestawione w środowisku 3D – tworzą spójną narrację wizualną o PUNO jako konstrukcie ideowym: miejscu wielu tożsamości i jednocześnie trwałym punkcie odniesienia dla polskiej nauki na emigracji.
 
 Integralną częścią ekspozycji jest również artystyczny wideoart *Idea żyje dzięki ludziom*, autorstwa Jarosława Soleckiego, poświęcony symbolicznemu ujęciu idei PUNO i jej twórców. W nowej odsłonie dzieło to zostało zaadaptowane do środowiska cyfrowego i udostępnione jako refleksja wizualna nad dziedzictwem Uczelni oraz ideą wspólnoty akademickiej budowanej na obczyźnie.
 
@@ -18,7 +18,7 @@ Integralną częścią ekspozycji jest również artystyczny wideoart *Idea żyj
 
 ## Portret prof. Włodzimierza Miera-Jędrzejowicza
 
-Portret prof. Włodzimierza Miera-Jędrzejowicza, stworzony specjalnie na potrzeby tej wystawy, odwołuje się do jego biografii jako naukowca i wychowanka polskiego środowiska emigracyjnego w Wielkiej Brytanii. Urodzony w Londynie, profesor specjalizuje się w fizyce cząstek elementarnych i przestrzeni kosmicznej. 
+Portret prof. Włodzimierza Miera-Jędrzejowicza, stworzony specjalnie na potrzeby tej wystawy, odwołuje się do jego biografii jako naukowca i wychowanka polskiego środowiska emigracyjnego w Wielkiej Brytanii. Urodzony w Londynie, profesor specjalizuje się w fizyce cząstek elementarnych i przestrzeni kosmicznej.
 
 Kolaż nawiązuje do jego badań nad wpływem wiatru słonecznego na ziemskie pole magnetyczne, a także do dwujęzycznego dziedzictwa i mostu kulturowego, który tworzy między tradycją a nowoczesnością. Elementy kompozycyjne odnoszą się zarówno do naukowej precyzji, jak i do wartości, jakie reprezentuje jako rektor Uczelni z tradycją migracyjną.
 
@@ -26,7 +26,7 @@ Kolaż nawiązuje do jego badań nad wpływem wiatru słonecznego na ziemskie po
 
 ## Rozwinięcie jubileuszowej wystawy z 2019 roku
 
-Ekspozycja stanowi rozwinięcie jubileuszowej wystawy *Architektura wyobrażona – 80 lat Polskiego Uniwersytetu na Obczyźnie*, zaprezentowanej w październiku 2019 roku w Galerii POSK w Londynie. 
+Ekspozycja stanowi rozwinięcie jubileuszowej wystawy *Architektura wyobrażona – 80 lat Polskiego Uniwersytetu na Obczyźnie*, zaprezentowanej w październiku 2019 roku w Galerii POSK w Londynie.
 
 Tamta wystawa składała się z czterech części tematycznych:
 
@@ -34,9 +34,9 @@ Tamta wystawa składała się z czterech części tematycznych:
 - gablot z dokumentami i pamiątkami historycznymi,
 - projektów artystycznych – animacji oraz serii kolaży portretowych Rektorów.
 
-Towarzyszyła jej publikacja pod tym samym tytułem (red. Justyna Gorzkowicz), zawierająca refleksje nad przestrzenią symboliczną Uczelni oraz teksty poświęcone historii, sztuce i tożsamości akademickiej na emigracji. 
+Towarzyszyła jej publikacja pod tym samym tytułem (red. Justyna Gorzkowicz), zawierająca refleksje nad przestrzenią symboliczną Uczelni oraz teksty poświęcone historii, sztuce i tożsamości akademickiej na emigracji.
 
-W publikacji po raz pierwszy została sformułowana koncepcja *architektury wyobrażonej*, autorstwa Justyny Gorzkowicz – ideowego gmachu PUNO, budowanego nie z kamienia, lecz z wartości, pamięci i ciągłości misji edukacyjnej, realizowanej w warunkach rozproszenia. 
+W publikacji po raz pierwszy została sformułowana koncepcja *architektury wyobrażonej*, autorstwa Justyny Gorzkowicz – ideowego gmachu PUNO, budowanego nie z kamienia, lecz z wartości, pamięci i ciągłości misji edukacyjnej, realizowanej w warunkach rozproszenia.
 
 Ta metafora – uniwersytetu bez murów, ale zbudowanego z trwałych relacji i biografii – znajduje swój artystyczny wyraz w cyfrowych portretach rektorów.
 
@@ -44,7 +44,7 @@ Ta metafora – uniwersytetu bez murów, ale zbudowanego z trwałych relacji i b
 
 ## Kolaże portretowe rektorów
 
-Każdy z kolaży został zaprojektowany zgodnie z zasadą szkatułkowej narracji wizualnej – jako opowieść w opowieści, w której symboliczne detale odsyłają do życia, pracy naukowej, pasji i kulturowych odniesień danego rektora. 
+Każdy z kolaży został zaprojektowany zgodnie z zasadą szkatułkowej narracji wizualnej – jako opowieść w opowieści, w której symboliczne detale odsyłają do życia, pracy naukowej, pasji i kulturowych odniesień danego rektora.
 
 W obrazach pojawiają się nawiązania do konkretnych miejsc (np. Jerozolima, Wilno), przedmiotów badań (np. fizyka cząstek, etnologia), osobistych symboli czy kontekstów historycznych. Tak skonstruowane portrety budują nie tylko wizualną mapę losów poszczególnych osób, ale też wspólną opowieść o sile idei akademickiej trwania na emigracji.
 
@@ -52,7 +52,7 @@ W obrazach pojawiają się nawiązania do konkretnych miejsc (np. Jerozolima, Wi
 
 ## Twórcy wystawy
 
-Kolaże powstały w 2019 roku w ramach działalności Laboratorium Lingua-Brandingu przy Zakładzie Współczesnej Kultury Literackiej i Artystycznej Instytutu Kultury Europejskiej PUNO. 
+Kolaże powstały w 2019 roku w ramach działalności Laboratorium Lingua-Brandingu przy Zakładzie Współczesnej Kultury Literackiej i Artystycznej Instytutu Kultury Europejskiej PUNO.
 
 Ich autorami są:
 
