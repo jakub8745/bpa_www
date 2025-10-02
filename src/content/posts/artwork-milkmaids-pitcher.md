@@ -3,11 +3,12 @@ title: "webGl/webXR art installation 'Milkmaid's Pitcher' "
 description: "meta description"
 date: 2023-06-01T16:56:47+06:00
 image: "/images/posts/MilkmaidsPitcher1200.jpg"
-draft: true
+draft: false
 authors: ["Jaroslaw Solecki"]
 tags: ["webGl/webXR", "art installation", "Milkmaid's Pitcher"]
 categories: ["AR/XR", "art installation"]
 ---
+
 The art installation 'Milkmaids Pitcher' was created during nights&weekends - a six-week programme organised by Buildspace in which we brought our various ideas to life. It was not easy! I was so busy building my installation
 that I didn't have enough time for social media. As a result, I finished in 200th place. I was competing against 3500 other ideas. That's not bad, is it? I had an idea for an art object. Purely artistic, conceptual.
 

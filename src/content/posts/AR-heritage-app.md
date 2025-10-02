@@ -68,13 +68,13 @@ We invite you to visit the [**official project website**](https://krystynabednar
   </a>
 </div>
 
-3. **Grant Permissions:**  
+1. **Grant Permissions:**  
    - When prompted, **allow camera access**  
-4. **Using the App:**  
+2. **Using the App:**  
    - Ensure you are in a **well-lit environment**  
    - Look around through your phone to explore in **Augmented Reality (AR)**  
    - A **pink pointer circle** should appear, tracking **walls and floors**  
-5. **Placing Objects:**
+3. **Placing Objects:**
    - Touch the **pink pointer** on the surface where you want to place an object  
    - The app will then display **memories and artwork** related to **Krystyna Bednarczyk and Poets’ Press**  
 
