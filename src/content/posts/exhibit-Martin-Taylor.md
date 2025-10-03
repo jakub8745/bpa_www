@@ -27,9 +27,7 @@ According to **Dr Justyna Gorzkowicz**, *“Taylor’s paintings are never still
 
 <Video
   width="100%" controls loop autoplay
-  src="/videos/Martin_book_exhibit_compressed.mp4" type="video/mp4"
-  src="/videos/Martin_book_exhibit_compressed.webm" type="video/webm"
+  src="https://objectstorage.uk-london-1.oraclecloud.com/n/lrbcisjgkyhb/b/bednarczyk/o/Martin_book_exhibit_compressed.mp4" type="video/mp4"
+  src="https://objectstorage.uk-london-1.oraclecloud.com/n/lrbcisjgkyhb/b/bednarczyk/o/Martin_book_exhibit_compressed.webm" type="video/webm"
   Your browser does not support the video tag.
 />
-
-

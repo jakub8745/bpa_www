@@ -42,7 +42,7 @@ We invite you to visit the [**official project website**](https://krystynabednar
 
 <video width="100%" controls loop autoPlay muted>
   <source
-    src="/videos/bednarczyk_ar_heritage.mp4"
+    src="https://objectstorage.uk-london-1.oraclecloud.com/n/lrbcisjgkyhb/b/bednarczyk/o/bednarczyk_ar_heritage.mp4"
     type="video/mp4"
   />
   Your browser does not support the video tag.

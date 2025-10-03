@@ -3,7 +3,7 @@ title: "What is in the Archive"
 description: "meta description"
 date: 2025-08-03T10:11:47+06:00
 image: "/images/posts/whatIsInARCH_opt.jpg"
-draft: false
+draft: true
 authors: ["Jaroslaw Solecki"]
 tags: ["internet archive", "3D", "webGL","webXR", "metaverse", "Blue Point Art Archive", "documentation"]
 categories: ["AR/XR", "heritage", "educational", "Exhibition"]

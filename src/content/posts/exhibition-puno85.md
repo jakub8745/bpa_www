@@ -68,7 +68,7 @@ Oryginalnej wystawie towarzyszyła również seria kolekcjonerskich pocztówek i
 
 <video width="100%" controls loop autoPlay muted>
   <source
-    src="/videos/puno85-post.mp4"
+    src="https://objectstorage.uk-london-1.oraclecloud.com/n/lrbcisjgkyhb/b/bednarczyk/o/puno85-post.mp4"
     type="video/mp4"
   />
   Your browser does not support the video tag.
