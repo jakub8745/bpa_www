@@ -1,9 +1,15 @@
 ---
 import Social from "@/components/Social.astro";
-import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
+
+const copyrightText =
+  "© 2026 BLUE POINT ART LTD. All rights reserved.";
+const companyInfo =
+  "Company No. 13664168 | PIC: 866976592 | Registered office: 4th Floor Silverstream House, 45 Fitzroy Street, London, W1T 6EB, United Kingdom";
+const disclaimer =
+  "Artistic and research outcomes presented on this website are shared for cultural, educational and documentation purposes. Interpretations and statements reflect the perspectives of the authors and collaborators and do not necessarily represent the views of any partner institutions or funders.";
 ---
 
 <footer class="section bg-dark">
@@ -26,6 +32,8 @@ import { markdownify } from "@/lib/utils/textConverter";
     {/* social icons */}
     <Social source={social} className="social-icons mb-8" />
     {/* copyright */}
-    <p set:html={markdownify(config.params.copyright)} class="text-white/75" />
+    <p set:html={markdownify(copyrightText)} class="text-white/75 text-sm" />
+    <p set:html={markdownify(companyInfo)} class="text-white/75 text-sm mt-2" />
+    <p set:html={markdownify(disclaimer)} class="text-white/75 text-sm mt-3" />
   </div>
 </footer>

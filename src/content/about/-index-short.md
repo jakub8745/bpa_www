@@ -20,3 +20,5 @@ what_i_do:
 BLUE POINT ART is a London-based creative hub where contemporary art, literature and cultural research meet publishing and education. We produce exhibitions, academic events and research-led projects, including presentations in our browser-based 3D Virtual Gallery (BPA) and hybrid programmes developed with London exhibition venues. Our practice is interdisciplinary and informed by art research and the digital humanities. Using immersive technologies, especially XR (extended reality), VR and web-based environments, we explore new ways of cultural participation, heritage interpretation and artistic storytelling, alongside robust documentation and dissemination.
 
 We work with artists, writers, researchers, educators and institutions, delivering curated programmes, artist-led workshops, and publications that extend a project's reach internationally, including through academic conference and congress presentations.
+
+[Read more](/about)

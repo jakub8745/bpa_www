@@ -1,115 +1,149 @@
 ---
-title: "Privacy"
+title: "Privacy Policy"
 description: "this is meta description"
 draft: false
 ---
+# Privacy Policy (UK GDPR / GDPR)
 
-The Blue Point Art ltd (BPA) is committed to protecting your privacy when you use any of our services:
+**BLUE POINT ART LTD** (“**Blue Point Art**”, “**we**”, “**us**”) is committed to protecting your privacy and handling personal data transparently and securely. This Privacy Policy explains how we collect, use, share and protect personal data when you interact with:
 
-    website under domain https://bluepointart.uk called further “Portal”
-    e-mail services under domain info@bluepointart.uk called further “E-mail”
-    on-site services called further “local services”
+* our website at **bluepointart.uk** (the “**Portal**”);
+* our email services (eg **[info@bluepointart.uk](mailto:info@bluepointart.uk)**) (“**Email**”); and
+* our in-person activities, such as exhibitions, events and workshops (“**Local Services**”).
 
-This Privacy Policy explains how we use information about you and how we protect your privacy. If you have any questions about how we look after your personal information, please contact BPA’s Data Protection Officer: Jaroslaw Solecki, at ( e-mail) info@bluepointart.uk or by writing to:4Th, Floor Silverstream House, 45 Fitzroy Street, London, W1T 6EB
+## 1) Who we are and how to contact us
 
-1. General concent
+**Controller:** BLUE POINT ART LTD
+**Registered office:** 4th Floor Silverstream House, 45 Fitzroy Street, London, W1T 6EB, United Kingdom
+**Data protection contact:** Jaroslaw Solecki
+**Email:** [info@bluepointart.uk](mailto:info@bluepointart.uk)
 
-By using our Portal/E-mail or local services you give your concent to this privacy policy.
-2. Your personal information.
+## 2) IPFS hosting and what this means
 
-Personal information is anything that directly or indirectly identifies and relates to a living person, such as a name, address, telephone number, etc.
+The Portal is a **static website hosted on IPFS** and delivered via our domain using **Cloudflare**. We do not operate an application server that stores visitor accounts or maintains traditional server-side session logs.
 
-We can collect them by:
+**Important note about IPFS:** IPFS is a distributed network. We can update the content served via our official domain and can remove (“unpin”) content from systems under our control. However, copies of public content may exist on third-party nodes or gateways. Where you request removal or correction, we will update or remove content under our control and take reasonable steps to reduce further distribution.
 
-    information collected by forms in Portal/e-mail/local services
-    information collected automatically by using Portal
+## 3) What personal data we collect
 
-–  information logged by systems such as IP, date & time, type of browser, device information, operating system
+### A. Information you provide
 
-–  “cookies” files- small text files sent by Portal to your device such as computer or smartphone
+* Contact details (name, email address, phone number)
+* Enquiry details and correspondence (messages sent via email or contact forms, if used)
+* Event/workshop information (registration details and attendance)
+* Accessibility information you choose to provide (where relevant to event delivery)
+* Billing/shipping details where you purchase publications or services (if applicable)
 
-–  analytical data collection by tools such as google analytics or facebook pixel.
+### B. Information collected automatically (Portal)
 
-Information captured automatically are used to the following:
+To keep the Portal reliable and to understand how pages perform for visitors, we use **Cloudflare Web Analytics** and **Real User Measurements (RUM)**. These services may process technical information such as:
 
-– management of the Portal
+* approximate location (derived from IP), device type, browser and operating system;
+* page URLs visited and referrer information;
+* performance and experience metrics (eg page load timing, rendering and responsiveness);
+* security-related telemetry to protect the Portal from abuse.
 
-– security management of the Portal
+We use this information to:
 
-– adjustment of Portal to your needs
+* monitor performance and improve user experience;
+* understand usage trends at an aggregate level; and
+* maintain the security and integrity of the Portal.
 
-– collection of statistical data
+We do not use this information to create personalised advertising profiles.
 
-– keeping session between server and a user to avoid continous log-in
+## 4) Why we use your data and lawful bases
 
-Information caputerd in “cookies” or by analytical services are used to the following:
+We use personal data only where UK GDPR allows it. The main purposes and lawful bases are:
 
-– proper management of the Portal in user browser
+1. **Responding to enquiries and communications (Email / Portal forms if used)**
+   **Lawful basis:** Legitimate interests (to respond and provide information) and/or steps prior to entering a contract where relevant.
 
-– scaling Portal to user’s needs
+2. **Delivering exhibitions, events, workshops and learning activities (Local Services)**
+   **Lawful basis:** Contract (to deliver what you register for) and/or legitimate interests (programme administration).
 
-– keeping individual settings and user preferences
+3. **Publishing, documentation and dissemination of project outcomes**
+   **Lawful basis:** Legitimate interests (cultural/educational dissemination).
+   Where we publish identifiable images/video or personal attribution beyond what is reasonably expected, we will seek consent or provide an appropriate opt-out where feasible.
 
-– creation and statistical analysis of user preferences and needs.
-2. Why do we need your personal information?
+4. **Website performance measurement and improvement (Cloudflare Web Analytics / RUM)**
+   **Lawful basis:** Legitimate interests (to ensure the Portal performs well and improves over time).
 
-    We may need to use some information about you to:
-    support and promote Blue Point Art ltd
-    contact you about our services to get your views, which helps us to manage them
-    help investigate any concerns or complaints you have about our services
-    check the quality of services
-    to help with research and planning of new services.
+5. **Security, fraud prevention and service reliability (Cloudflare services)**
+   **Lawful basis:** Legitimate interests (protecting the Portal and users).
 
-3. How the law allows us to use your personal information?
+6. **Legal and regulatory compliance**
+   **Lawful basis:** Legal obligation and/or legitimate interests.
 
-There are a number of legal reasons why we will need to collect and use your personal information in different circumstances. Generally, we collect and use personal information where:
+7. **Marketing / newsletters (if you opt in)**
+   **Lawful basis:** Consent (you can unsubscribe at any time).
 
-    you, or your legal representative, have given consent
-    you have entered into any sort of agreement or contract with us
-    it is necessary to perform our statutory duties or other legitimate purposes
-    it is necessary to protect someone in an emergency
-    it is required by law
-    it is necessary for employment purposes
-    it is necessary for any possible legal cases
-    it is necessary for archiving, research, or statistical purposes
+We do not use automated decision-making that produces legal or similarly significant effects.
 
-4. Consent.
+## 5) Who we share data with
 
-If we have consent to use your personal information for any particular reason, you have the right to remove your consent at any time. If you want to remove your consent, please contact info@bluepointart.uk to let us deal with your request.
-5. Your rights regarding your personal information.
+We share personal data only when necessary and with appropriate safeguards.
 
-The law gives you a number of rights in relation to what personal information is used by Blue Point Art ltd, and how it is used. These rights are listed below. You can ask us to:
+**Service providers (processors):**
 
-    provide you with a copy of the personal information that we hold about you
-    correct personal information about you which you find as necessary
-    delete personal information about you if you think we no longer should be using it
-    stop using your personal information if you think it is wrong, until it is corrected
-    transfer your personal information to another provider
-    not use automated decision-making processes to make decisions about your data.
+* **Cloudflare** (content delivery, security, Web Analytics and RUM for the Portal)
+* email and productivity service providers (for communications)
+* event/workshop partners and venues (only where necessary for delivery)
+* professional advisers (eg accounting/legal) where required
 
-6. With whom do we share your personal information?
+**Legal disclosures:** We may share information with authorities or regulators where required by law or to prevent fraud/crime.
 
-In some circumstances, we can use other organisations to either store personal information or use it to help deliver our services to you. Where we have these arrangements, there is always an agreement in place to make sure that the organisation complies with data protection law.
+## 6) Cookies and similar technologies
 
-We can have a legal duty to provide personal information to other organisations to prevent any crime or fraud. For all these reasons, the risk must be serious before we can override your right to privacy.
+The Portal may use cookies or similar technologies that are **strictly necessary** for secure and reliable delivery. Cloudflare Web Analytics is designed to provide privacy-focused measurement.
 
-If this is the case, we will make sure that we record what information we share and our reasons for doing so. We will let you know what we have done and why, if we think it is safe to do so.
- 7. How do we protect your personal information?
+If we introduce any non-essential cookies or third-party trackers in the future, we will update this policy and, where required, provide an appropriate consent mechanism.
 
-We have a legal duty to make sure we hold your personal information (on paper or / and electronically) in a secure way, and to only make it available to those who have a right to see them. Examples of our security include:
+You can also control cookies through your browser settings.
 
-    Encryption, meaning that information is hidden so that it cannot be read without special knowledge (such as a password)
-    Pseudonymisation, meaning that we can use a different name or identifier to hide parts of your personal information from view. This means that someone outside of Blue Point Art ltd could work on your information for us without ever knowing it was yours
-    Controlling access to systems and networks allows us to stop people who are not allowed to view your personal information from getting access to it
-    Training for our staff allows us to make them aware of how to handle personal information, and how and when to report when something goes wrong
-    Regular testing of our technology and ways of working, including keeping up to date on the latest security updates (commonly called patches)
+## 7) International data transfers (UK/EEA and beyond)
 
-8. Information outside of the European Union.
+We are based in the UK and collaborate internationally. Some suppliers (including Cloudflare) may process technical data in countries outside the UK/EEA. Where this happens, we ensure appropriate safeguards are used in line with UK data protection law (for example, approved transfer mechanisms and contractual protections).
 
-The majority of personal information is stored on systems in the UK or EU. However, there are some occasions where your information may leave the UK/EU either to get to another organisation, or where it is stored in a system outside of the EU. It relates to our relations with the UK and the fact Brexit is a fact.
-9. How long do we keep your personal information?
+If you are located in the EEA, personal data may be transferred to the UK; current EU adequacy decisions permit this transfer (in force until **27 December 2031**, subject to review/renewal).
 
-We will only hold your personal information for as long as it is necessary to fulfil our legal duties or statutory purposes.
-10. Further advice?
+---
 
-For all the independent advice about data protection, privacy and data sharing issues, you can contact the Information Commissioner’s Office in the United Kingdom at: www.ico.org.uk
+## 8) Security
+
+We use appropriate technical and organisational measures designed to protect personal data, including secure configurations, access controls, and reputable providers for delivery and protection of the Portal. No online service can be guaranteed 100% secure, but we take reasonable steps to reduce risk.
+
+## 9) How long we keep your data (retention)
+
+We keep personal data only as long as necessary for the purposes described above, including legal and accounting obligations. Typical retention periods:
+
+* **Enquiries and correspondence:** up to 24 months after last contact
+* **Event/workshop registrations and attendance records:** up to 36 months (or longer if required for accounting/safeguarding)
+* **Publishing orders/invoices (if applicable):** 6 years
+* **Web Analytics / RUM data:** retained according to our Cloudflare configuration and only as long as needed for performance monitoring and improvement.
+
+## 10) Your rights
+
+You have rights under UK GDPR (and, where applicable, EU GDPR), including the right to:
+
+* access your data
+* correct inaccurate data
+* request deletion (in certain circumstances)
+* restrict processing (in certain circumstances)
+* object to processing (particularly where we rely on legitimate interests; always for direct marketing)
+* data portability (where applicable)
+* withdraw consent at any time (where we rely on consent)
+
+To exercise your rights, contact: **[info@bluepointart.uk](mailto:info@bluepointart.uk)**.
+
+## 11) Complaints
+
+If you have concerns, please contact us first and we will try to resolve them.
+
+You also have the right to complain to the UK Information Commissioner’s Office (ICO): **[www.ico.org.uk](http://www.ico.org.uk)**.
+
+
+## 12) Changes to this policy
+
+We may update this policy from time to time by publishing a new version on this page.
+
+**Last updated:** 23 January 2026
