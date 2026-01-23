@@ -17,8 +17,21 @@ what_i_do:
     description: "We implement protocols for 3D model digitisation and open-source AR frameworks to enhance art accessibility and foster global collaboration."
 
 ---
-Blue Point Art Gallery London is a pioneering virtual art space that was established in response to the challenges posed by the pandemic in 2020. Using the latest 3D graphics technology accessible through web browsers, our gallery creates a dynamic and multifaceted platform for artistic expression, documentation and education. The virtual space is designed to encourage verbal and non-verbal communication between artists, researchers and the public, providing an immersive experience that does not require any additional applications.
-Since its foundation, Blue Point Art Gallery has focused on close collaboration with researchers from a range of universities. Today, it functions as an independent authorial gallery, run by Justyna Gorzkowicz and Jarek Solecki. The gallery is not only a venue for art exhibitions, but also a place to participate in research projects covering a wide variety of subjects.
-BPA itself has become one of our research tools – we presented our workflow at the DARIAH 2024 Annual Conference. It remains an independent space open to collaboration and the co-creation of diverse, immersive environments.
-Currently, Justyna and Jarek are involved in the CAPHE and GUARDIAN projects. Research carried out within these frameworks will be showcased not only on platforms designated by project participants, but also in gallery environments specially created for this purpose.
-Blue Point Art Gallery London is dedicated to promoting creativity and cultural exchange in a virtual environment. Whether you are an artist, a researcher or an art enthusiast, we aim to make your experience with us truly unforgettable.
+BLUE POINT ART is a London-based creative hub operating at the crossroads of contemporary art, cultural research, publishing and education. We develop projects that bring together artistic practice, curatorial production and public engagement—ranging from exhibitions hosted in our browser-based **3D Virtual Blue Point Art Gallery (BPA)** to academic and cultural events, publications, and digital formats that expand how art can be encountered, interpreted and shared.
+
+Our work is distinctly **interdisciplinary and research-led**, combining **visual art and literature** with approaches drawn from art research and the **digital humanities**. We explore how emerging technologies—particularly **XR (extended reality), VR, and immersive web-based environments**—can open new pathways for cultural participation, heritage interpretation, and innovative forms of artistic storytelling, documentation and dissemination.
+
+We collaborate with artists, writers, researchers, educators and cultural institutions to design programmes that are accessible while remaining conceptually rigorous. Our activity includes curated exhibitions, public programmes and **artist-led workshops** that support creative experimentation and skills development, including sessions focused on literary and artistic heritage. Workshop formats range from visual and mixed-media practice to narrative and text-based work, alongside new-media approaches that connect artistic thinking with digital tools and contemporary cultural questions.
+
+Publishing forms a core part of our platform. We support the creation, editing and dissemination of project outputs—catalogues, essays, documentation and research-led texts—so that work developed through exhibitions, workshops and events can circulate within wider cultural and academic contexts.
+
+We work in hybrid modes by combining online infrastructure with onsite collaboration. Alongside our virtual environments, we partner with **London-based physical exhibition venues** to connect in-person programming with digital presentation, enabling broader access, international participation and longer-term visibility beyond a single location.
+
+Many of our collaborations are international in scope and are presented beyond gallery settings through **conference and congress contributions**, where we share both artistic outcomes and research insights with professional and academic communities.
+
+**Keywords:** contemporary art; interdisciplinary practice; art & literature; digital humanities; practice-based research; curatorial production; publishing; cultural heritage; workshops; hybrid events; immersive media; XR; VR; web-based 3D exhibitions; international collaboration.
+
+**Registered office:** 4th Floor Silverstream House, 45 Fitzroy Street, London, England, W1T 6EB
+**Company name:** BLUE POINT ART LTD
+**Company number:** 13664168
+**PIC:** 866976592

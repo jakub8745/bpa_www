@@ -6,9 +6,8 @@ import { getEntry, render, type CollectionEntry } from "astro:content";
 // load about entry
 const aboutEntry = (await getEntry(
   "about",
-  "-index",
+  "-index-short",
 )) as CollectionEntry<"about">;
-console.log(aboutEntry.data);
 const { Content } = await render(aboutEntry);
 
 import Pagination from "@/layouts/components/Pagination.astro";

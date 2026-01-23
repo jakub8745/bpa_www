@@ -1,9 +1,8 @@
-import React from "react";
 import config from "@/config/config.json";
 import dateFormat from "@/lib/utils/dateFormat";
 import { humanize, slugify } from "@/lib/utils/textConverter";
 import Fuse from "fuse.js";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 const { summary_length } = config.settings;
 
@@ -33,12 +32,16 @@ export default function SearchBar({ searchList }: Props) {
     setInputVal(e.currentTarget.value);
   };
 
-  const fuse = new Fuse(searchList, {
-    keys: ["data.title", "data.categories", "data.tags"],
-    includeMatches: true,
-    minMatchCharLength: 2,
-    threshold: 0.5,
-  });
+  const fuse = useMemo(
+    () =>
+      new Fuse(searchList, {
+        keys: ["data.title", "data.categories", "data.tags"],
+        includeMatches: true,
+        minMatchCharLength: 2,
+        threshold: 0.5,
+      }),
+    [searchList],
+  );
 
   useEffect(() => {
     const searchUrl = new URLSearchParams(window.location.search);
@@ -60,11 +63,11 @@ export default function SearchBar({ searchList }: Props) {
       searchParams.set("q", inputVal);
       const newRelativePathQuery =
         window.location.pathname + "?" + searchParams.toString();
-      history.pushState(null, "", newRelativePathQuery);
+      history.replaceState(null, "", newRelativePathQuery);
     } else {
-      history.pushState(null, "", window.location.pathname);
+      history.replaceState(null, "", window.location.pathname);
     }
-  }, [inputVal]);
+  }, [inputVal, fuse]);
 
   return (
     <div className="min-h-[45vh]">
@@ -104,6 +107,8 @@ export default function SearchBar({ searchList }: Props) {
                   alt={item.data.title}
                   width={445}
                   height={230}
+                  loading="lazy"
+                  decoding="async"
                 />
               </a>
             )}
