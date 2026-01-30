@@ -13,7 +13,7 @@ We work in hybrid modes by combining online infrastructure with onsite collabora
 
 Many of our collaborations are international in scope and are presented beyond gallery settings through **conference and congress contributions**, where we share both artistic outcomes and research insights with professional and academic communities. 
 
-**Keywords:** contemporary art; interdisciplinary practice; art & literature; digital humanities; practice-based research; curatorial production; publishing; cultural heritage; workshops; hybrid events; immersive media; XR; VR; web-based 3D exhibitions; international collaboration.
+**Keywords:** contemporary art; interdisciplinary practice; art & literature; digital humanities; practice-based research; curatorial production; publishing; cultural heritage; workshops; hybrid events; immersive media; XR; VR; web-based 3D exhibitions; international collaboration. 
 
 **Registered office:** 4th Floor Silverstream House, 45 Fitzroy Street, London, England, W1T 6EB
 **Company name:** BLUE POINT ART LTD
