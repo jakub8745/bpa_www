@@ -67,6 +67,7 @@ jobs:
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
           DNSLINK_RECORD_NAME: ${{ env.DNSLINK_RECORD_NAME }}
           CF_WEB3_HOSTNAME_ID: ${{ secrets.CF_WEB3_HOSTNAME_ID }}
+          CF_WEB3_HOSTNAME_ID_WWW: ${{ secrets.CF_WEB3_HOSTNAME_ID_WWW }}
         run: |
           if [ -n "${CF_WEB3_HOSTNAME_ID}" ]; then
             node -e '
@@ -82,6 +83,28 @@ jobs:
               const resp = await fetch(api, { method: "PATCH", headers, body });
               const out = await resp.json();
               if (!out.success) { console.error(out); process.exit(1); }
+              console.log(`Updated Cloudflare Web3 hostname (apex): ${hostnameId}`);
+            })();
+            '
+            if [ -z "${CF_WEB3_HOSTNAME_ID_WWW}" ]; then
+              exit 0
+            fi
+          fi
+          if [ -n "${CF_WEB3_HOSTNAME_ID_WWW}" ]; then
+            node -e '
+            const token = process.env.CF_API_TOKEN;
+            const zone = process.env.CF_ZONE_ID;
+            const hostnameId = process.env.CF_WEB3_HOSTNAME_ID_WWW;
+            const cid = process.env.CID;
+            const dnslink = `/ipfs/${cid}`;
+            const api = `https://api.cloudflare.com/client/v4/zones/${zone}/web3/hostnames/${hostnameId}`;
+            const headers = { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" };
+            (async () => {
+              const body = JSON.stringify({ dnslink });
+              const resp = await fetch(api, { method: "PATCH", headers, body });
+              const out = await resp.json();
+              if (!out.success) { console.error(out); process.exit(1); }
+              console.log(`Updated Cloudflare Web3 hostname (www): ${hostnameId}`);
             })();
             '
             exit 0
