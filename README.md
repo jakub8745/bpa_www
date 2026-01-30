@@ -11,7 +11,7 @@ Publishing forms a core part of our platform. We support the creation, editing a
 
 We work in hybrid modes by combining online infrastructure with onsite collaboration. Alongside our virtual environments, we partner with **London-based physical exhibition venues** to connect in-person programming with digital presentation, enabling broader access, international participation and longer-term visibility beyond a single location.
 
-Many of our collaborations are international in scope and are presented beyond gallery settings through **conference and congress contributions**, where we share both artistic outcomes and research insights with professional and academic communities.
+Many of our collaborations are international in scope and are presented beyond gallery settings through **conference and congress contributions**, where we share both artistic outcomes and research insights with professional and academic communities. 
 
 **Keywords:** contemporary art; interdisciplinary practice; art & literature; digital humanities; practice-based research; curatorial production; publishing; cultural heritage; workshops; hybrid events; immersive media; XR; VR; web-based 3D exhibitions; international collaboration.
 
