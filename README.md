@@ -15,7 +15,7 @@ Many of our collaborations are international in scope and are presented beyond g
 
 **Keywords:** contemporary art; interdisciplinary practice; art & literature; digital humanities; practice-based research; curatorial production; publishing; cultural heritage; workshops; hybrid events; immersive media; XR; VR; web-based 3D exhibitions; international collaboration. 
 
-**Registered office:** 4th Floor Silverstream House, 45 Fitzroy Street, London, England, W1T 6EB
+**Registered office:** 4th Floor Silverstream House, 45 Fitzroy Street, London, England, W1T 6EB 
 **Company name:** BLUE POINT ART LTD
 **Company number:** 13664168
 **PIC:** 866976592
