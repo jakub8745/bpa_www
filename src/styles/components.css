@@ -8,6 +8,11 @@
   @apply max-w-[1400px]! px-4! md:px-8! mx-auto;
 }
 
+/* skip link */
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-dark focus:px-4 focus:py-2 focus:text-white focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:ring-offset-white;
+}
+
 /* page heading */
 .page-heading {
   @apply mb-20 text-center font-bold leading-10;
@@ -184,4 +189,3 @@
 footer p a {
   @apply transition-all duration-200 hover:text-white;
 }
-

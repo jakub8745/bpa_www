@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "this is meta description"
+description: "Privacy policy for Blue Point Art Ltd covering data use, IPFS hosting, analytics, and GDPR rights."
 draft: false
 ---
 # Privacy Policy (UK GDPR / GDPR)

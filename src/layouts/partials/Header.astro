@@ -1,8 +1,6 @@
 ---
 import Logo from "@/components/Logo.astro";
 import menu from "@/config/menu.json";
-import { IoSearch } from "react-icons/io5";
-import theme from "@/config/theme.json";
 
 export interface ChildNavigationLink {
   name: string;
@@ -39,6 +37,7 @@ const { main }: { main: NavigationLink[] } = menu;
   <div class="order-1 border border-gray-300 font-secondary uppercase">
     <nav
       class="navbar container flex justify-between items-center flex-wrap border-l border-gray-300 border-r border-gray-300"
+      aria-label="Primary"
     >
       <!-- navbar toggler -->
       <input id="nav-toggle" type="checkbox" class="peer hidden" />
@@ -46,6 +45,8 @@ const { main }: { main: NavigationLink[] } = menu;
         id="show-button"
         for="nav-toggle"
         class="order-1 flex cursor-pointer items-center text-black md:order-1 lg:order-1 xl:hidden 2xl:hidden 3xl:hidden 4xl:hidden"
+        aria-controls="nav-menu"
+        aria-label="Open menu"
       >
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Open</title>
@@ -56,6 +57,8 @@ const { main }: { main: NavigationLink[] } = menu;
         id="hide-button"
         for="nav-toggle"
         class="order-1 hidden cursor-pointer items-center text-black md:order-1 lg:order-1 xl:hidden 2xl:hidden 3xl:hidden 4xl:hidden"
+        aria-controls="nav-menu"
+        aria-label="Close menu"
       >
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Close</title>
@@ -71,51 +74,57 @@ const { main }: { main: NavigationLink[] } = menu;
         class="navbar-nav order-3 hidden w-full peer-checked:block md:order-2 lg:order-2 xl:flex xl:w-auto 2xl:w-auto 3xl:w-auto 4xl:w-auto active:scale-97 transition-transform duration-150"
       >
         {
-          main.map((menu) => (
-            <>
-              {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown relative group">
-                  <!-- checkbox toggle instead of radio -->
-                  <input
-                    type="checkbox"
-                    id={`toggle-${menu.name}`}
-                    class="peer hidden"
-                  />
+          main.map((menu) => {
+            const menuId = menu.name.toLowerCase().replace(/\s+/g, "-");
+            return (
+              <>
+                {menu.hasChildren ? (
+                  <li class="nav-item nav-dropdown relative group">
+                    <!-- checkbox toggle instead of radio -->
+                    <input
+                      type="checkbox"
+                      id={`toggle-${menuId}`}
+                      class="peer hidden"
+                    />
 
-                  <label
-                    for={`toggle-${menu.name}`}
-                    class="nav-link inline-flex items-center cursor-pointer"
-                  >
-                    {menu.name}
-                    <svg class="h-5 w-5 ml-1" viewBox="0 0 20 20">
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                  </label>
+                    <label
+                      for={`toggle-${menuId}`}
+                      class="nav-link inline-flex items-center cursor-pointer"
+                      aria-haspopup="true"
+                      aria-controls={`submenu-${menuId}`}
+                    >
+                      {menu.name}
+                      <svg class="h-5 w-5 ml-1" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </label>
 
-                  <ul
-                    class="nav-dropdown-list hidden peer-checked:block group-hover:block md:absolute md:top-full md:left-0 bg-white shadow-lg"
-                  >
-                    {menu.children?.map((child) => (
-                      <li class="nav-dropdown-item">
-                        <a
-                          href={child.url}
-                          class="nav-dropdown-link block px-4 py-2 hover:bg-gray-100"
-                        >
-                          {child.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ) : (
-                <li class="nav-item">
-                  <a href={menu.url} class="nav-link block">
-                    {menu.name}
-                  </a>
-                </li>
-              )}
-            </>
-          ))
+                    <ul
+                      id={`submenu-${menuId}`}
+                      class="nav-dropdown-list hidden peer-checked:block group-hover:block md:absolute md:top-full md:left-0 bg-white shadow-lg"
+                    >
+                      {menu.children?.map((child) => (
+                        <li class="nav-dropdown-item">
+                          <a
+                            href={child.url}
+                            class="nav-dropdown-link block px-4 py-2 hover:bg-gray-100"
+                          >
+                            {child.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : (
+                  <li class="nav-item">
+                    <a href={menu.url} class="nav-link block">
+                      {menu.name}
+                    </a>
+                  </li>
+                )}
+              </>
+            );
+          })
         }
       </ul>
 
@@ -126,7 +135,20 @@ const { main }: { main: NavigationLink[] } = menu;
           title="search"
           aria-label="search"
         >
-          <!--  <IoSearch /> -->
+          <svg
+            class="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <span class="sr-only">Search</span>
         </a>
       </div>
     </nav>

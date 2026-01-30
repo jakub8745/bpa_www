@@ -38,6 +38,9 @@ export interface Props {
 // distructure frontmatters
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+const canonicalUrl =
+  canonical ?? new URL(Astro.url.pathname, config.site.base_url).toString();
 ---
 
 <!doctype html>
@@ -59,7 +62,11 @@ const { title, meta_title, description, image, noindex, canonical } =
       content="#000"
     />
     <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+
+    <!-- font preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- google font css -->
     <AstroFont
@@ -97,7 +104,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     </title>
 
     <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+    <link rel="canonical" href={canonicalUrl} item-prop="url" />
 
     <!-- noindex robots -->
     {noindex && <meta name="robots" content="noindex,nofollow" />}
@@ -131,10 +138,8 @@ const { title, meta_title, description, image, noindex, canonical } =
       )}
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={config.site.title} />
 
     <!-- twitter-title -->
     <meta
@@ -170,9 +175,12 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">
+      Skip to main content
+    </a>
     <TwSizeIndicator />
     <Header />
-    <main id="main-content" class="min-h-[60vh]">
+    <main id="main-content" class="min-h-[60vh]" tabindex="-1">
       <slot />
     </main>
     <Footer />
