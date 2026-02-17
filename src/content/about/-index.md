@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Blue Point Art Gallery London"
+title: ""
 meta_title: "About"
 image: "/images/BPAaboutImage.jpg"
 draft: false

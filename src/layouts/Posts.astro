@@ -26,7 +26,13 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post, i: number) => (
-      <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
+      <div
+        class={
+          i === 0 && fluid != false && post.data.lead !== false
+            ? "col-12"
+            : "col-12 sm:col-6"
+        }
+      >
         {post.data.image && (
           <a
             href={`/${post.id}`}
@@ -36,8 +42,8 @@ const { className, posts, fluid } = Astro.props;
               class="group-hover:scale-[1.03] transition duration-300 w-full"
               src={post.data.image}
               alt={post.data.title}
-              width={i === 0 ? 925 : 445}
-              height={i === 0 ? 475 : 230}
+              width={i === 0 && fluid != false && post.data.lead !== false ? 925 : 445}
+              height={i === 0 && fluid != false && post.data.lead !== false ? 475 : 230}
             />
           </a>
         )}
@@ -99,7 +105,9 @@ const { className, posts, fluid } = Astro.props;
             (post.body ?? "").slice(
               0,
               Number(
-                i === 0 && fluid != false ? summary_length * 2 : summary_length
+                i === 0 && fluid != false && post.data.lead !== false
+                  ? summary_length * 2
+                  : summary_length
               )
             )
           )}
