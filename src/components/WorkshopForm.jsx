@@ -5,11 +5,11 @@ const DRIVE_FILE_REGEX = /[-\w]{25,}/
 const DRIVE_API_EXEC_URL =
   'https://script.google.com/macros/s/AKfycbyXt3p8sIsxlhbMpdvldmCplAZQJ76g_jHkqtPb4jexUzy05mEQGYEXYetMX_cRUG_u/exec'
 const GROUP_DRIVE_FOLDERS = {
-  '1': 'https://drive.google.com/drive/folders/1bshSVlSWVZsM4mS-2Iijm2mwQcjOEmO3',
-  '2': 'https://drive.google.com/drive/folders/1rSbqonO1FId2fO7qRL-zUdbQx5IcsABQ',
-  '3': 'https://drive.google.com/drive/folders/1fg_GEYmUtj_6noxZr24z9GWb-yADOSOo',
-  '4': 'https://drive.google.com/drive/folders/1Eu24BIO0lAoOBlzm6msrv_MN9lTEWwhp',
-  '5': 'https://drive.google.com/drive/folders/1DRBH7ouVgO3HarNGWHBE8OGckS2ev9SJ'
+  '1': 'https://drive.google.com/drive/folders/1RU-kRleyj8umXRuDMoLvqLca45sWNLsl',
+  '2': 'https://drive.google.com/drive/folders/1cPxfHDCfjvEqkXpez90mBiGhKAlfC2hL',
+  '3': 'https://drive.google.com/drive/folders/1ysjJt8v2m7G0H8VGgF3suluze3mAd1jm',
+  '4': 'https://drive.google.com/drive/folders/1bneabvSQwQQ3KPtcFiG-1D_Dgoo_1_51',
+  '5': 'https://drive.google.com/drive/folders/1sGVFJyYHxe8qBQqXMg6YcCue_W6CdB1d'
 }
 
 const DEFAULT_PROMPT_1 = 'Podaj interpretację emocjonalną tego screenshotu (do 150 wyrazów).'
@@ -496,22 +496,27 @@ function WorkshopForm() {
         <section className="card">
           <h2>Dane grupy</h2>
           <p className="section-note">{GROUP_NOTE}</p>
-          <div className="row">
-            <label>Grupa:</label>
-            <label>
-              <input type="radio" name="group" value="1" checked={formData.group === '1'} onChange={updateField} /> 1
+          <div className="row group-options">
+            <label className="group-label">Grupa:</label>
+            <label className="group-option">
+              <input type="radio" name="group" value="1" checked={formData.group === '1'} onChange={updateField} />
+              <span>1</span>
             </label>
-            <label>
-              <input type="radio" name="group" value="2" checked={formData.group === '2'} onChange={updateField} /> 2
+            <label className="group-option">
+              <input type="radio" name="group" value="2" checked={formData.group === '2'} onChange={updateField} />
+              <span>2</span>
             </label>
-            <label>
-              <input type="radio" name="group" value="3" checked={formData.group === '3'} onChange={updateField} /> 3
+            <label className="group-option">
+              <input type="radio" name="group" value="3" checked={formData.group === '3'} onChange={updateField} />
+              <span>3</span>
             </label>
-            <label>
-              <input type="radio" name="group" value="4" checked={formData.group === '4'} onChange={updateField} /> 4
+            <label className="group-option">
+              <input type="radio" name="group" value="4" checked={formData.group === '4'} onChange={updateField} />
+              <span>4</span>
             </label>
-            <label>
-              <input type="radio" name="group" value="5" checked={formData.group === '5'} onChange={updateField} /> 5
+            <label className="group-option">
+              <input type="radio" name="group" value="5" checked={formData.group === '5'} onChange={updateField} />
+              <span>5</span>
             </label>
           </div>
           <label>
