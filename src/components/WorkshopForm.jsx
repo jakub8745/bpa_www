@@ -494,6 +494,11 @@ function WorkshopForm() {
 
   return (
     <main className="workshop-form page">
+      <img
+        className="form-header-image"
+        src="/images/posts/vectai_formularz_naglowek.jpg"
+        alt="Nagłówek formularza"
+      />
       <h1>Template warsztatowy</h1>
       <form className="form-grid" onSubmit={(event) => event.preventDefault()}>
         <section className="card">
@@ -673,6 +678,14 @@ function WorkshopForm() {
             </p>
           )}
         </div>
+      </section>
+
+      <section className="form-disclaimer" aria-label="Disclaimer projektu CAPHE">
+        <p>
+          Wydarzenie jest częścią projektu CAPHE, finansowanego przez Unię Europejską w ramach programu Horyzont Europa
+          (grant nr 101086391). Poglądy i opinie wyrażone w materiałach należą wyłącznie do autorów i nie odzwierciedlają
+          koniecznie stanowiska Unii Europejskiej ani EACEA.
+        </p>
       </section>
     </main>
   )
