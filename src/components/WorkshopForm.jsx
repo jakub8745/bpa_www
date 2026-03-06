@@ -5,11 +5,11 @@ const DRIVE_FILE_REGEX = /[-\w]{25,}/
 const DRIVE_API_EXEC_URL =
   'https://script.google.com/macros/s/AKfycbyXt3p8sIsxlhbMpdvldmCplAZQJ76g_jHkqtPb4jexUzy05mEQGYEXYetMX_cRUG_u/exec'
 const GROUP_DRIVE_FOLDERS = {
-  '1': 'https://drive.google.com/drive/folders/1RU-kRleyj8umXRuDMoLvqLca45sWNLsl',
-  '2': 'https://drive.google.com/drive/folders/1cPxfHDCfjvEqkXpez90mBiGhKAlfC2hL',
-  '3': 'https://drive.google.com/drive/folders/1ysjJt8v2m7G0H8VGgF3suluze3mAd1jm',
-  '4': 'https://drive.google.com/drive/folders/1bneabvSQwQQ3KPtcFiG-1D_Dgoo_1_51',
-  '5': 'https://drive.google.com/drive/folders/1sGVFJyYHxe8qBQqXMg6YcCue_W6CdB1d'
+  '1': 'https://drive.google.com/drive/folders/1SPQ2rRQFJNQrf8D-K0WEosedeQSYRVOW',
+  '2': 'https://drive.google.com/drive/folders/1DDPYBgVbUa9vDWQ7_TkvZBhbLXGVd_Ad',
+  '3': 'https://drive.google.com/drive/folders/1DDPYBgVbUa9vDWQ7_TkvZBhbLXGVd_Ad',
+  '4': 'https://drive.google.com/drive/folders/1sb8zuP4Aul9fENPZLGMWUWckdc79kkjL',
+  '5': 'https://drive.google.com/drive/folders/1ZQvLKyQDvO6jitKBpp4exIBzTVnwWLEI'
 }
 
 const DEFAULT_PROMPT_1 = 'Podaj interpretację emocjonalną tego screenshotu (do 150 wyrazów).'
@@ -21,7 +21,7 @@ const CHATGPT_NOTE =
   'Otwórz ChatGPT w osobnym oknie przeglądarki. Skopiuj wybrany screenshot z ramki powyżej i wklej go do okna czatu. Następnie wpisz poniższe prompty. Pełne odpowiedzi AI zanotuj i wklej w odpowiednie miejsca formularza.'
 const FRAGMENTS_NOTE = 'Przeczytajcie uważnie tekst wygenerowany przez AI. W tekście poszukujcie słów, fraz, znaków lub zdań, które najbardziej przyciągają Waszą uwagę. Mogą to być fragmenty mocne, zaskakujące, niepokojące, zbyt dosłowne albo takie, które otwierają nowy kierunek interpretacji. Wybierajcie to, co zatrzymuje uwagę, budzi napięcie, brzmi nieoczywiście albo pobudza wyobraźnię.'
 const TEXTBANK_NOTE = 'Wpiszcie tutaj wybrane fragmenty tekstu AI. Ułóżcie je jako materiał do dalszej pracy nad warstwą słowną wideopoematu.'
-const AUTOSAVE_INTERVAL_MS = 60_000
+const AUTOSAVE_INTERVAL_MS = 180_000
 const FILE_NAME_REGEX = /^s(\d+)_(\d+)_/
 
 function pad2(value) {
@@ -179,11 +179,8 @@ function WorkshopForm() {
   const [saveStatus, setSaveStatus] = useState('')
   const [saveFileUrl, setSaveFileUrl] = useState('')
   const [isSaving, setIsSaving] = useState(false)
-  const [autoSaveEnabled, setAutoSaveEnabled] = useState(true)
-  const [lastSavedSignature, setLastSavedSignature] = useState('')
   const [lastAutoSaveAt, setLastAutoSaveAt] = useState('')
   const [cloudFiles, setCloudFiles] = useState([])
-  const [selectedCloudFileId, setSelectedCloudFileId] = useState('')
   const [cloudStatus, setCloudStatus] = useState('')
   const [isCloudBusy, setIsCloudBusy] = useState(false)
 
@@ -198,7 +195,6 @@ function WorkshopForm() {
       }))
     )
     setCloudFiles([])
-    setSelectedCloudFileId('')
     setCloudStatus('')
   }, [formData.group])
 
@@ -311,8 +307,6 @@ function WorkshopForm() {
     [formData, entries]
   )
 
-  const exportSignature = useMemo(() => JSON.stringify(exportedData), [exportedData])
-
   async function handleSaveJson(options = {}) {
     const { silent = false, reason = 'manual' } = options
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
@@ -320,7 +314,8 @@ function WorkshopForm() {
     const screenshotNumber = Number.isNaN(parsedScanNumber) || parsedScanNumber < 1 ? 1 : parsedScanNumber
     const versionNumber = getNextVersionForScreenshot(cloudFiles, screenshotNumber)
     const fileName = `s${pad2(screenshotNumber)}_${pad2(versionNumber)}_${timestamp}.json`
-    const signatureAtSaveTime = exportSignature
+    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
+    const groupFolderId = extractDriveFileId(groupFolderUrl)
 
     try {
       setIsSaving(true)
@@ -334,6 +329,9 @@ function WorkshopForm() {
           action: 'save_json',
           token: saveToken,
           group: formData.group,
+          folderUrl: groupFolderUrl,
+          folderId: groupFolderId,
+          groupFolderId,
           fileName,
           payload: exportedData
         })
@@ -352,7 +350,6 @@ function WorkshopForm() {
         throw new Error('API nie potwierdziło zapisu.')
       }
 
-      setLastSavedSignature(signatureAtSaveTime)
       if (reason === 'autosave') {
         setLastAutoSaveAt(new Date().toLocaleTimeString())
       } else {
@@ -391,26 +388,10 @@ function WorkshopForm() {
     setSaveFileUrl('')
   }
 
-  function handleLoadJsonFile(event) {
-    const file = event.target.files?.[0]
-    if (!file) return
-
-    const reader = new FileReader()
-    reader.onload = () => {
-      try {
-        const parsed = JSON.parse(String(reader.result || '{}'))
-        applyLoadedPayload(parsed, file.name)
-      } catch (error) {
-        setSaveStatus(`Nie udało się wczytać pliku: ${error.message}`)
-      }
-    }
-
-    reader.readAsText(file)
-    event.target.value = ''
-  }
-
   async function fetchSavedJsonListFromDrive(options = {}) {
     const { silent = false } = options
+    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
+    const groupFolderId = extractDriveFileId(groupFolderUrl)
     try {
       setIsCloudBusy(true)
       if (!silent) setCloudStatus('Pobieranie listy zapisanych plików...')
@@ -418,6 +399,9 @@ function WorkshopForm() {
       const query = new URLSearchParams({
         action: 'list_json',
         group: formData.group,
+        folderUrl: groupFolderUrl,
+        folderId: groupFolderId,
+        groupFolderId,
         token: saveToken
       })
       const response = await fetch(`${DRIVE_API_EXEC_URL}?${query.toString()}`)
@@ -429,7 +413,6 @@ function WorkshopForm() {
 
       const files = Array.isArray(result.files) ? result.files : []
       setCloudFiles(files)
-      setSelectedCloudFileId((prev) => prev || files[0]?.id || '')
       if (!silent) {
         setCloudStatus(`Znaleziono ${files.length} plik(ów) JSON w folderze grupy ${formData.group}.`)
       }
@@ -441,20 +424,43 @@ function WorkshopForm() {
     }
   }
 
-  async function loadSelectedJsonFromDrive() {
-    if (!selectedCloudFileId) {
-      setCloudStatus('Wybierz plik z listy.')
-      return
-    }
-
+  async function loadLatestJsonFromDrive() {
+    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
+    const groupFolderId = extractDriveFileId(groupFolderUrl)
     try {
       setIsCloudBusy(true)
-      setCloudStatus('Wczytywanie pliku z Google Drive...')
+      setCloudStatus('Wczytywanie ostatniej wersji z Google Drive...')
+
+      const listQuery = new URLSearchParams({
+        action: 'list_json',
+        group: formData.group,
+        folderUrl: groupFolderUrl,
+        folderId: groupFolderId,
+        groupFolderId,
+        token: saveToken
+      })
+      const listResponse = await fetch(`${DRIVE_API_EXEC_URL}?${listQuery.toString()}`)
+      if (!listResponse.ok) throw new Error(`Błąd API: ${listResponse.status}`)
+      const listResult = await listResponse.json()
+      if (listResult.error) throw new Error(listResult.error)
+      if (!listResult.ok) throw new Error('API nie zwróciło listy plików.')
+
+      const files = Array.isArray(listResult.files) ? listResult.files : []
+      setCloudFiles(files)
+      if (files.length === 0) {
+        setCloudStatus(`Brak zapisanych plików JSON w folderze grupy ${formData.group}.`)
+        return
+      }
+
+      const latestFileId = files[0].id
 
       const query = new URLSearchParams({
         action: 'load_json',
         group: formData.group,
-        fileId: selectedCloudFileId,
+        folderUrl: groupFolderUrl,
+        folderId: groupFolderId,
+        groupFolderId,
+        fileId: latestFileId,
         token: saveToken
       })
       const response = await fetch(`${DRIVE_API_EXEC_URL}?${query.toString()}`)
@@ -465,7 +471,7 @@ function WorkshopForm() {
       if (!result.ok || !result.payload) throw new Error('API nie zwróciło danych pliku.')
 
       applyLoadedPayload(result.payload, result.fileName || 'plik z Google Drive')
-      setCloudStatus(`Wczytano z Google Drive: ${result.fileName || selectedCloudFileId}`)
+      setCloudStatus(`Wczytano ostatnią wersję: ${result.fileName || latestFileId}`)
     } catch (error) {
       setCloudStatus(`Nie udało się wczytać z Google Drive: ${error.message}`)
     } finally {
@@ -478,16 +484,13 @@ function WorkshopForm() {
   }, [formData.group, saveToken])
 
   useEffect(() => {
-    if (!autoSaveEnabled) return
-
     const timer = setInterval(() => {
       if (isSaving) return
-      if (exportSignature === lastSavedSignature) return
       void handleSaveJson({ silent: true, reason: 'autosave' })
     }, AUTOSAVE_INTERVAL_MS)
 
     return () => clearInterval(timer)
-  }, [autoSaveEnabled, isSaving, exportSignature, lastSavedSignature, formData.group, saveToken])
+  }, [isSaving, formData.group, saveToken, exportedData])
 
   return (
     <main className="workshop-form page">
@@ -652,66 +655,16 @@ function WorkshopForm() {
       <section className="card output">
         <h2>Podgląd danych formularza (JSON)</h2>
         <div className="save-panel">
-          <label className="inline-toggle">
-            <input
-              type="checkbox"
-              checked={autoSaveEnabled}
-              onChange={(event) => setAutoSaveEnabled(event.target.checked)}
-            />
-            Autosave co 60 sekund (tylko gdy są zmiany)
-          </label>
+          <p className="section-note">Autosave co 3 minuty.</p>
           {lastAutoSaveAt && <p className="section-note">Ostatni autosave: {lastAutoSaveAt}</p>}
-          <label>
-            Wczytaj zapisany plik JSON
-            <input type="file" accept="application/json,.json" onChange={handleLoadJsonFile} />
-          </label>
           <div className="cloud-load-panel">
-            <button type="button" className="button-secondary" onClick={() => fetchSavedJsonListFromDrive()} disabled={isCloudBusy}>
-              {isCloudBusy ? 'Łączenie...' : `Pobierz listę JSON z folderu grupy ${formData.group}`}
+            <button type="button" className="button-secondary" onClick={loadLatestJsonFromDrive} disabled={isCloudBusy}>
+              {isCloudBusy ? 'Łączenie...' : 'Wczytaj ostatnią wersję'}
             </button>
-            {cloudFiles.length > 0 && (
-              <div>
-                <p className="section-note">Ostatnio zapisane (grupa {formData.group}):</p>
-                <ul className="recent-list">
-                  {cloudFiles.slice(0, 5).map((file) => (
-                    <li key={file.id}>
-                      <button
-                        type="button"
-                        className="link-button"
-                        onClick={() => setSelectedCloudFileId(file.id)}
-                      >
-                        {file.name}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {cloudFiles.length > 0 && (
-              <>
-                <label>
-                  Zapisane pliki w Google Drive
-                  <select
-                    value={selectedCloudFileId}
-                    onChange={(event) => setSelectedCloudFileId(event.target.value)}
-                  >
-                    <option value="">Wybierz plik...</option>
-                    {cloudFiles.map((file) => (
-                      <option key={file.id} value={file.id}>
-                        {file.name}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <button type="button" className="button-secondary" onClick={loadSelectedJsonFromDrive} disabled={isCloudBusy}>
-                  Wczytaj wybrany plik z Google Drive
-                </button>
-              </>
-            )}
             {cloudStatus && <p className="status">{cloudStatus}</p>}
           </div>
           <button type="button" onClick={handleSaveJson} disabled={isSaving}>
-            {isSaving ? 'Zapisywanie...' : 'Zapisz JSON do folderu grupy'}
+            {isSaving ? 'Zapisywanie...' : 'Zapisz formularz'}
           </button>
           {saveStatus && <p className="status">{saveStatus}</p>}
           {saveFileUrl && (
@@ -720,7 +673,6 @@ function WorkshopForm() {
             </p>
           )}
         </div>
-        <pre>{JSON.stringify(exportedData, null, 2)}</pre>
       </section>
     </main>
   )
