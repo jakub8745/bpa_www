@@ -9,7 +9,7 @@ We collaborate with artists, writers, researchers, educators and cultural instit
 
 Publishing forms a core part of our platform. We support the creation, editing and dissemination of project outputs—catalogues, essays, documentation and research-led texts—so that work developed through exhibitions, workshops and events can circulate within wider cultural and academic contexts.
 
-We work in hybrid modes by combining online infrastructure with onsite collaboration. Alongside our virtual environments, we partner with **London-based physical exhibition venues** to connect in-person programming with digital presentation, enabling broader access, international participation and longer-term visibility beyond a single location.
+We work  in hybrid modes by combining online infrastructure with onsite collaboration. Alongside our virtual environments, we partner with **London-based physical exhibition venues** to connect in-person programming with digital presentation, enabling broader access, international participation and longer-term visibility beyond a single location.
 
 Many of our collaborations are international in scope and are presented beyond gallery settings through **conference and congress contributions**, where we share both artistic outcomes and research insights with professional and academic communities. 
 
