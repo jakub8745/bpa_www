@@ -1,12 +1,19 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import './WorkshopForm.css'
 
 const DRIVE_FILE_REGEX = /[-\w]{25,}/
 const DRIVE_API_EXEC_URL =
   'https://script.google.com/macros/s/AKfycbyXt3p8sIsxlhbMpdvldmCplAZQJ76g_jHkqtPb4jexUzy05mEQGYEXYetMX_cRUG_u/exec'
-const GROUP_DRIVE_FOLDERS = {
+const GROUP_SCREENSHOT_FOLDERS = {
+  '1': 'https://drive.google.com/drive/folders/1RU-kRleyj8umXRuDMoLvqLca45sWNLsl',
+  '2': 'https://drive.google.com/drive/folders/1cPxfHDCfjvEqkXpez90mBiGhKAlfC2hL',
+  '3': 'https://drive.google.com/drive/folders/1ysjJt8v2m7G0H8VGgF3suluze3mAd1jm',
+  '4': 'https://drive.google.com/drive/folders/1bneabvSQwQQ3KPtcFiG-1D_Dgoo_1_51',
+  '5': 'https://drive.google.com/drive/folders/1sGVFJyYHxe8qBQqXMg6YcCue_W6CdB1d'
+}
+const GROUP_HISTORY_FOLDERS = {
   '1': 'https://drive.google.com/drive/folders/1SPQ2rRQFJNQrf8D-K0WEosedeQSYRVOW',
-  '2': 'https://drive.google.com/drive/folders/1DDPYBgVbUa9vDWQ7_TkvZBhbLXGVd_Ad',
+  '2': 'https://drive.google.com/drive/folders/1sOhqk2AOVqGUrIXFo3b-TzP-pRBZkw2S',
   '3': 'https://drive.google.com/drive/folders/1DDPYBgVbUa9vDWQ7_TkvZBhbLXGVd_Ad',
   '4': 'https://drive.google.com/drive/folders/1sb8zuP4Aul9fENPZLGMWUWckdc79kkjL',
   '5': 'https://drive.google.com/drive/folders/1ZQvLKyQDvO6jitKBpp4exIBzTVnwWLEI'
@@ -135,7 +142,7 @@ function makeEntry(group) {
     screenshotDescription: '',
     screenshotSource: 'drive',
     screenshotImage: null,
-    driveFolderUrl: GROUP_DRIVE_FOLDERS[group] || GROUP_DRIVE_FOLDERS['1'],
+    driveFolderUrl: GROUP_SCREENSHOT_FOLDERS[group] || GROUP_SCREENSHOT_FOLDERS['1'],
     driveImages: [],
     driveStatus: '',
     prompt1: DEFAULT_PROMPT_1,
@@ -151,10 +158,7 @@ function normalizeLoadedEntry(rawEntry, group) {
     screenshotDescription: rawEntry?.screenshotDescription || '',
     screenshotSource: 'drive',
     screenshotImage: rawEntry?.screenshotImage || null,
-    driveFolderUrl:
-      rawEntry?.driveFolderUrl ||
-      GROUP_DRIVE_FOLDERS[group] ||
-      GROUP_DRIVE_FOLDERS['1'],
+    driveFolderUrl: GROUP_SCREENSHOT_FOLDERS[group] || GROUP_SCREENSHOT_FOLDERS['1'],
     driveImages: [],
     driveStatus: '',
     prompt1: rawEntry?.prompt1 || DEFAULT_PROMPT_1,
@@ -164,8 +168,20 @@ function normalizeLoadedEntry(rawEntry, group) {
   }
 }
 
+function makeEmptyFormData(group) {
+  return {
+    group,
+    groupName: '',
+    affiliation: '',
+    participants: '',
+    scanNumber: '',
+    textBank: ''
+  }
+}
+
 function WorkshopForm() {
   const saveToken = ''
+  const hasMountedRef = useRef(false)
   const [formData, setFormData] = useState({
     group: '1',
     groupName: '',
@@ -185,7 +201,7 @@ function WorkshopForm() {
   const [isCloudBusy, setIsCloudBusy] = useState(false)
 
   useEffect(() => {
-    const nextFolder = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
+    const nextFolder = GROUP_SCREENSHOT_FOLDERS[formData.group] || GROUP_SCREENSHOT_FOLDERS['1']
     setEntries((prev) =>
       prev.map((entry) => ({
         ...entry,
@@ -314,8 +330,8 @@ function WorkshopForm() {
     const screenshotNumber = Number.isNaN(parsedScanNumber) || parsedScanNumber < 1 ? 1 : parsedScanNumber
     const versionNumber = getNextVersionForScreenshot(cloudFiles, screenshotNumber)
     const fileName = `s${pad2(screenshotNumber)}_${pad2(versionNumber)}_${timestamp}.json`
-    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
-    const groupFolderId = extractDriveFileId(groupFolderUrl)
+    const historyFolderUrl = GROUP_HISTORY_FOLDERS[formData.group] || GROUP_HISTORY_FOLDERS['1']
+    const historyFolderId = extractDriveFileId(historyFolderUrl)
 
     try {
       setIsSaving(true)
@@ -329,9 +345,9 @@ function WorkshopForm() {
           action: 'save_json',
           token: saveToken,
           group: formData.group,
-          folderUrl: groupFolderUrl,
-          folderId: groupFolderId,
-          groupFolderId,
+          folderUrl: historyFolderUrl,
+          folderId: historyFolderId,
+          groupFolderId: historyFolderId,
           fileName,
           payload: exportedData
         })
@@ -364,9 +380,11 @@ function WorkshopForm() {
     }
   }
 
-  function applyLoadedPayload(parsed, sourceLabel) {
-    const loadedGroup = String(parsed.group || '1')
-    const validGroup = GROUP_DRIVE_FOLDERS[loadedGroup] ? loadedGroup : '1'
+  function applyLoadedPayload(parsed, sourceLabel, options = {}) {
+  const { forcedGroup = '' } = options
+  const loadedGroup = String(parsed.group || '1')
+  const preferredGroup = String(forcedGroup || loadedGroup || '1')
+  const validGroup = GROUP_HISTORY_FOLDERS[preferredGroup] ? preferredGroup : '1'
 
     setFormData({
       group: validGroup,
@@ -388,10 +406,18 @@ function WorkshopForm() {
     setSaveFileUrl('')
   }
 
+  function resetFormForGroup(group) {
+    const validGroup = GROUP_HISTORY_FOLDERS[group] ? group : '1'
+    setFormData(makeEmptyFormData(validGroup))
+    setEntries([makeEntry(validGroup)])
+    setSaveStatus('')
+    setSaveFileUrl('')
+  }
+
   async function fetchSavedJsonListFromDrive(options = {}) {
     const { silent = false } = options
-    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
-    const groupFolderId = extractDriveFileId(groupFolderUrl)
+    const historyFolderUrl = GROUP_HISTORY_FOLDERS[formData.group] || GROUP_HISTORY_FOLDERS['1']
+    const historyFolderId = extractDriveFileId(historyFolderUrl)
     try {
       setIsCloudBusy(true)
       if (!silent) setCloudStatus('Pobieranie listy zapisanych plików...')
@@ -399,9 +425,9 @@ function WorkshopForm() {
       const query = new URLSearchParams({
         action: 'list_json',
         group: formData.group,
-        folderUrl: groupFolderUrl,
-        folderId: groupFolderId,
-        groupFolderId,
+        folderUrl: historyFolderUrl,
+        folderId: historyFolderId,
+        groupFolderId: historyFolderId,
         token: saveToken
       })
       const response = await fetch(`${DRIVE_API_EXEC_URL}?${query.toString()}`)
@@ -424,19 +450,20 @@ function WorkshopForm() {
     }
   }
 
-  async function loadLatestJsonFromDrive() {
-    const groupFolderUrl = GROUP_DRIVE_FOLDERS[formData.group] || GROUP_DRIVE_FOLDERS['1']
-    const groupFolderId = extractDriveFileId(groupFolderUrl)
+  async function loadLatestJsonFromDrive(options = {}) {
+    const { silent = false } = options
+    const historyFolderUrl = GROUP_HISTORY_FOLDERS[formData.group] || GROUP_HISTORY_FOLDERS['1']
+    const historyFolderId = extractDriveFileId(historyFolderUrl)
     try {
       setIsCloudBusy(true)
-      setCloudStatus('Wczytywanie ostatniej wersji z Google Drive...')
+      if (!silent) setCloudStatus('Wczytywanie ostatniej wersji z Google Drive...')
 
       const listQuery = new URLSearchParams({
         action: 'list_json',
         group: formData.group,
-        folderUrl: groupFolderUrl,
-        folderId: groupFolderId,
-        groupFolderId,
+        folderUrl: historyFolderUrl,
+        folderId: historyFolderId,
+        groupFolderId: historyFolderId,
         token: saveToken
       })
       const listResponse = await fetch(`${DRIVE_API_EXEC_URL}?${listQuery.toString()}`)
@@ -448,7 +475,10 @@ function WorkshopForm() {
       const files = Array.isArray(listResult.files) ? listResult.files : []
       setCloudFiles(files)
       if (files.length === 0) {
-        setCloudStatus(`Brak zapisanych plików JSON w folderze grupy ${formData.group}.`)
+        resetFormForGroup(formData.group)
+        if (!silent) {
+          setCloudStatus(`Brak zapisanych plików JSON w folderze grupy ${formData.group}.`)
+        }
         return
       }
 
@@ -457,9 +487,9 @@ function WorkshopForm() {
       const query = new URLSearchParams({
         action: 'load_json',
         group: formData.group,
-        folderUrl: groupFolderUrl,
-        folderId: groupFolderId,
-        groupFolderId,
+        folderUrl: historyFolderUrl,
+        folderId: historyFolderId,
+        groupFolderId: historyFolderId,
         fileId: latestFileId,
         token: saveToken
       })
@@ -470,17 +500,29 @@ function WorkshopForm() {
       if (result.error) throw new Error(result.error)
       if (!result.ok || !result.payload) throw new Error('API nie zwróciło danych pliku.')
 
-      applyLoadedPayload(result.payload, result.fileName || 'plik z Google Drive')
-      setCloudStatus(`Wczytano ostatnią wersję: ${result.fileName || latestFileId}`)
+      applyLoadedPayload(result.payload, result.fileName || 'plik z Google Drive', {
+        forcedGroup: formData.group
+      })
+      if (!silent) {
+        setCloudStatus(`Wczytano ostatnią wersję: ${result.fileName || latestFileId}`)
+      }
     } catch (error) {
-      setCloudStatus(`Nie udało się wczytać z Google Drive: ${error.message}`)
+      if (!silent) {
+        setCloudStatus(`Nie udało się wczytać z Google Drive: ${error.message}`)
+      }
     } finally {
       setIsCloudBusy(false)
     }
   }
 
   useEffect(() => {
-    fetchSavedJsonListFromDrive({ silent: true })
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true
+      void loadLatestJsonFromDrive({ silent: true })
+      return
+    }
+
+    void loadLatestJsonFromDrive({ silent: true })
   }, [formData.group, saveToken])
 
   useEffect(() => {
