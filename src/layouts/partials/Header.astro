@@ -42,25 +42,17 @@ const { main }: { main: NavigationLink[] } = menu;
       <!-- navbar toggler -->
       <input id="nav-toggle" type="checkbox" class="peer hidden" />
       <label
-        id="show-button"
+        id="menu-button"
         for="nav-toggle"
-        class="order-1 flex cursor-pointer items-center text-black md:order-1 lg:order-1 xl:hidden 2xl:hidden 3xl:hidden 4xl:hidden"
+        class="order-1 flex cursor-pointer items-center text-black"
         aria-controls="nav-menu"
-        aria-label="Open menu"
+        aria-label="Toggle menu"
       >
-        <svg class="h-6 fill-current" viewBox="0 0 20 20">
+        <svg class="menu-open-icon h-6 w-6 fill-current" viewBox="0 0 20 20" aria-hidden="true">
           <title>Menu Open</title>
-          <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+          <path d="M1 3h18v2H1V3zm0 6h18v2H1V9zm0 6h18v2H1v-2z"></path>
         </svg>
-      </label>
-      <label
-        id="hide-button"
-        for="nav-toggle"
-        class="order-1 hidden cursor-pointer items-center text-black md:order-1 lg:order-1 xl:hidden 2xl:hidden 3xl:hidden 4xl:hidden"
-        aria-controls="nav-menu"
-        aria-label="Close menu"
-      >
-        <svg class="h-6 fill-current" viewBox="0 0 20 20">
+        <svg class="menu-close-icon hidden h-6 w-6 fill-current" viewBox="0 0 20 20" aria-hidden="true">
           <title>Menu Close</title>
           <polygon
             points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -71,7 +63,7 @@ const { main }: { main: NavigationLink[] } = menu;
 
       <ul
         id="nav-menu"
-        class="navbar-nav order-3 hidden w-full peer-checked:block md:order-2 lg:order-2 xl:flex xl:w-auto 2xl:w-auto 3xl:w-auto 4xl:w-auto active:scale-97 transition-transform duration-150"
+        class="navbar-nav order-3 hidden w-full peer-checked:block active:scale-97 transition-transform duration-150"
       >
         {
           main.map((menu) => {

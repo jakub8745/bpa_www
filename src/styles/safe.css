@@ -1,14 +1,26 @@
 /* navbar toggler */
-input#nav-toggle:checked ~ label#show-button {
+input#nav-toggle:checked ~ label#menu-button .menu-open-icon {
   @apply hidden;
 }
 
-input#nav-toggle:checked ~ label#hide-button {
-  @apply flex md:hidden;
+input#nav-toggle:checked ~ label#menu-button .menu-close-icon {
+  @apply block;
 }
 
 input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex;
+}
+
+@media (min-width: 980px) {
+  label#menu-button {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+    width: auto;
+    order: 2;
+  }
 }
 
 /* form style */
