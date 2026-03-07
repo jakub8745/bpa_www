@@ -725,8 +725,8 @@ function WorkshopForm() {
       <section className="form-disclaimer" aria-label="Disclaimer projektu CAPHE">
         <p>
           Wydarzenie jest częścią projektu CAPHE, finansowanego przez Unię Europejską w ramach programu Horyzont Europa
-          (grant nr 101086391). Poglądy i opinie wyrażone w materiałach należą wyłącznie do autorów i nie odzwierciedlają
-          koniecznie stanowiska Unii Europejskiej ani EACEA.
+          (grant nr 101086391). Poglądy i opinie wyrażone w materiałach należą wyłącznie do autorów i nie koniecznie
+          odzwierciedlają stanowisko Unii Europejskiej ani EACEA.
         </p>
       </section>
     </main>
