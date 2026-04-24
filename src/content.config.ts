@@ -48,6 +48,7 @@ const postsCollection = defineCollection({
     description: z.string().optional(),
     date: z.date().optional(),
     image: z.string().optional(),
+    image_link: z.string().url().optional(),
     lead: z.boolean().optional(),
     categories: z.array(z.string()).default(["others"]),
     authors: z.array(z.string()).default(["Admin"]),
@@ -58,6 +59,7 @@ const postsCollection = defineCollection({
 
 // Pages collection schema
 const pagesCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/pages" }),
   schema: z.object({
     id: z.string().optional(),
     title: z.string(),
