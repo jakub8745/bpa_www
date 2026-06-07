@@ -14,6 +14,14 @@
       "hasChildren": true,
       "children": [
         {
+          "name": "Living Heritage after the exhibition",
+          "url": "/living-heritage-after-the-exhibition-caphe-krakow-2026"
+        },
+        {
+          "name": "who gets to decide when understanding has occurred?",
+          "url": "/who-gets-to-decide-when-understanding-has-occurred"
+        },
+        {
           "name": "The exhibition 'Vincenz's Dialogues - Views' ",
           "url": "/vincenzs-dialogues-views"
         },
@@ -44,10 +52,6 @@
         {
           "name": "Lockdowns by Joanna Ciechanowska",
           "url": "/lockdowns-ciechanowska"
-        },
-        {
-          "name": "who gets to decide when understanding has occurred?",
-          "url": "/who-gets-to-decide-when-understanding-has-occurred"
         }
       ]
     },
