@@ -2,7 +2,7 @@
 title: "LIVING HERITAGE: REMEDIATING THROUGH VIDEOPOETRY"
 description: "A virtual exhibition of three videopoems developed through CAPHE workshops, presented in Lisbon and in Spacial."
 date: 2025-11-29T00:00:00+00:00
-image: "/images/posts/LivingHeritage_Lisbon.jpg"
+image: "/images/posts/LivingHeritageLisbon.jpg"
 image_link: "https://archive.bluepointart.uk/#videopoem_lisbon_112025"
 draft: false
 authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
