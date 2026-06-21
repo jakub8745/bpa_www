@@ -19,6 +19,12 @@ const authorsBySlug = new Map(
 );
 const { summary_length } = config.settings;
 const { className, posts, fluid } = Astro.props;
+
+const getExcerpt = (post: CollectionEntry<"posts">, isLead: boolean) => {
+  const maxLength = Number(isLead ? summary_length * 2 : summary_length);
+  const source = plainify(post.body ?? "").replace(/\s+/g, " ").trim();
+  return source.slice(0, maxLength);
+};
 ---
 
 <div
@@ -26,9 +32,14 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post, i: number) => (
+      (() => {
+        const isLead = i === 0 && fluid != false && post.data.lead !== false;
+        const excerpt = getExcerpt(post, isLead);
+
+        return (
       <div
         class={
-          i === 0 && fluid != false && post.data.lead !== false
+          isLead
             ? "col-12"
             : "col-12 sm:col-6"
         }
@@ -42,8 +53,8 @@ const { className, posts, fluid } = Astro.props;
               class="group-hover:scale-[1.03] transition duration-300 w-full"
               src={post.data.image}
               alt={post.data.title}
-              width={i === 0 && fluid != false && post.data.lead !== false ? 925 : 445}
-              height={i === 0 && fluid != false && post.data.lead !== false ? 475 : 230}
+              width={isLead ? 925 : 445}
+              height={isLead ? 475 : 230}
             />
           </a>
         )}
@@ -101,19 +112,12 @@ const { className, posts, fluid } = Astro.props;
           </a>
         </h3>
         <p class="text-text">
-          {plainify(
-            (post.body ?? "").slice(
-              0,
-              Number(
-                i === 0 && fluid != false && post.data.lead !== false
-                  ? summary_length * 2
-                  : summary_length
-              )
-            )
-          )}
+          {excerpt}
           ...
         </p>
       </div>
+        );
+      })()
     ))
   }
 </div>
