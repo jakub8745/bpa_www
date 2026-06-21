@@ -106,4 +106,7 @@ Justyna Gorzkowicz
 
 ## PDF do pobrania
 
-[Pobierz PDF: „Literatura w świecie wizualnym”](/documents/literatura-w-swiecie-wizualnym.pdf)
+[Pobierz PDF: „Literatura w świecie wizualnym”](/documents/LITERATURA-W-SWIECIE-WIZUALNYM-zaproszenie.pdf)
+
+[Download English PDF: "Literature in the Visual Field – Open Call"](/documents/LITERATURE%20IN%20THE%20VISUAL%20FIELD_Open_Call.pdf)
+
