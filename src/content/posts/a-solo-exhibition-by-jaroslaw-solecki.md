@@ -39,4 +39,10 @@ At the centre of *Imponderabilia* is the fissure—not only as a sign of rupture
 
 The exhibition forms the visual centre of the first edition of *Literature in the Visual Field*. Readings, performances and conversations will take place within the installation, responding to its material and spatial presence while remaining a supporting layer of the wider exhibition experience.
 
+## Literature in the Visual Field
+
+The programme was developed through an [open call for literary and performative contributions](/imponderabilia), which is now closed. The call invited writers and performers to enter into dialogue with the installation through text, voice, sound and moving image.
+
+The first edition of *Literature in the Visual Field* is supported by a [£500 grant from the Polonia Aid Foundation Trust (PAFT)](/paft-grant-literature-in-the-visual-field), helping bring together artists, writers and audiences within the exhibition space.
+
 **Curator:** Justyna Gorzkowicz
