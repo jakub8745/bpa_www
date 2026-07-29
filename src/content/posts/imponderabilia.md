@@ -1,5 +1,5 @@
 ---
-title: "imponderabilia"
+title: "Literature in the Visual Field. Open Call: Imponderabilia"
 description: "Literatura w świecie wizualnym — polskie słowo i sztuka w Londynie. Pierwsza edycja 2026: Imponderabilia."
 image: "/images/posts/imponderabilia_header.jpg"
 date: 2026-06-21T00:00:00+01:00
