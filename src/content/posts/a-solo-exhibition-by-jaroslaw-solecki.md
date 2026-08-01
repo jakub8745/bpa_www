@@ -12,6 +12,7 @@ tags:
     "installation",
     "video",
     "sculpture",
+    "rzeźba",
     "POSK Gallery",
     "London",
   ]
