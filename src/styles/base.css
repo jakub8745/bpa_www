@@ -21,7 +21,7 @@ h1,
 }
 
 h1.big-title {
-  @apply text-xl md:text-3xl;
+  @apply text-3xl md:text-4xl;
 }
 
 

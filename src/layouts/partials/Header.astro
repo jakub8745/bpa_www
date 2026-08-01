@@ -15,6 +15,11 @@ export interface NavigationLink {
 }
 
 const { main }: { main: NavigationLink[] } = menu;
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isCurrentPath = (url: string) => {
+  const menuPath = url.replace(/\/$/, "") || "/";
+  return currentPath === menuPath;
+};
 ---
 
 <header class="header pt-6">
@@ -34,7 +39,7 @@ const { main }: { main: NavigationLink[] } = menu;
     </p>
   </div>
 
-  <div class="order-1 border border-gray-300 font-secondary uppercase">
+  <div class="order-1 border border-gray-300 font-secondary">
     <nav
       class="navbar container flex justify-between items-center flex-wrap border-l border-gray-300 border-r border-gray-300"
       aria-label="Primary"
@@ -68,6 +73,9 @@ const { main }: { main: NavigationLink[] } = menu;
         {
           main.map((menu) => {
             const menuId = menu.name.toLowerCase().replace(/\s+/g, "-");
+            const hasActiveChild =
+              menu.children?.some((child) => isCurrentPath(child.url)) ?? false;
+            const isActive = isCurrentPath(menu.url) || hasActiveChild;
             return (
               <>
                 {menu.hasChildren ? (
@@ -81,7 +89,7 @@ const { main }: { main: NavigationLink[] } = menu;
 
                     <label
                       for={`toggle-${menuId}`}
-                      class="nav-link inline-flex items-center cursor-pointer"
+                      class={`nav-link cursor-pointer ${isActive ? "is-active" : ""}`}
                       aria-haspopup="true"
                       aria-controls={`submenu-${menuId}`}
                     >
@@ -93,13 +101,14 @@ const { main }: { main: NavigationLink[] } = menu;
 
                     <ul
                       id={`submenu-${menuId}`}
-                      class="nav-dropdown-list hidden peer-checked:block group-hover:block md:absolute md:top-full md:left-0 bg-white shadow-lg"
+                      class="nav-dropdown-list hidden peer-checked:block md:group-hover:block"
                     >
                       {menu.children?.map((child) => (
                         <li class="nav-dropdown-item">
                           <a
                             href={child.url}
-                            class="nav-dropdown-link block px-4 py-2 hover:bg-gray-100"
+                            class={`nav-dropdown-link ${isCurrentPath(child.url) ? "is-active" : ""}`}
+                            aria-current={isCurrentPath(child.url) ? "page" : undefined}
                           >
                             {child.name}
                           </a>
@@ -109,7 +118,11 @@ const { main }: { main: NavigationLink[] } = menu;
                   </li>
                 ) : (
                   <li class="nav-item">
-                    <a href={menu.url} class="nav-link block">
+                    <a
+                      href={menu.url}
+                      class={`nav-link ${isActive ? "is-active" : ""}`}
+                      aria-current={isActive ? "page" : undefined}
+                    >
                       {menu.name}
                     </a>
                   </li>

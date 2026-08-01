@@ -23,7 +23,7 @@ const { title, description, authors, categories, image, image_link, date, tags }
     <article class="row justify-center">
       <div class="md:col-10 text-center">
         <h1 set:html={markdownify(title)} class="big-title" />
-        <ul class="mt-4 flex flex-wrap items-center justify-center text-text h3">
+        <ul class="mt-4 flex flex-wrap items-center justify-center text-base sm:text-lg text-text">
           <li class="mx-3">
             {
               allAuthors
