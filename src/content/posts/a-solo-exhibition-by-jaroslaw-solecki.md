@@ -68,7 +68,7 @@ The first edition of *Literature in the Visual Field* is supported by a [grant f
 <figure class="mt-10 flex justify-center">
   <img
     src="/images/logos/logoPAFT.jpg"
-    alt="Polonia Aid Foundation Trust (PAFT)"
+    alt="Polonia Aid Foundation Trust(PAFT)"
     width="300"
     height="232"
     loading="lazy"
