@@ -59,6 +59,20 @@ The exhibition forms the visual centre of the first edition of *Literature in th
 
 The programme was developed through an [open call for literary and performative contributions](/imponderabilia), which is now closed. The call invited writers and performers to enter into dialogue with the installation through text, voice, sound and moving image.
 
+View the [full bilingual programme for 16–21 August 2026](/literature-in-the-visual-field-programme-2026), including the literary evenings, private view, book presentation and open mic.
+
 The first edition of *Literature in the Visual Field* is supported by a [grant from the Polonia Aid Foundation Trust (PAFT)](/paft-grant-literature-in-the-visual-field), helping bring together artists, writers and audiences within the exhibition space.
 
 **Curator:** Justyna Gorzkowicz
+
+<figure class="mt-10 flex justify-center">
+  <img
+    src="/images/logos/logoPAFT.jpg"
+    alt="Polonia Aid Foundation Trust (PAFT)"
+    width="300"
+    height="232"
+    loading="lazy"
+    decoding="async"
+    class="h-auto w-full max-w-[300px]"
+  />
+</figure>

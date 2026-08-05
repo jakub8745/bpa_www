@@ -86,6 +86,31 @@
   }
 }
 
+/* compact editorial hierarchy for event programmes */
+.content .programme-kicker {
+  @apply mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-text;
+}
+
+.content .programme-name {
+  @apply mt-0 mb-1 text-3xl leading-tight tracking-tight md:text-4xl;
+}
+
+.content .programme-name-pl {
+  @apply mt-0 mb-8 font-serif text-2xl font-semibold leading-tight tracking-tight text-dark md:text-3xl;
+}
+
+.content .programme-day {
+  @apply mt-12 mb-2 border-t border-border pt-7 text-2xl leading-tight tracking-tight md:text-3xl;
+}
+
+.content .programme-event {
+  @apply mt-0 mb-5 text-lg font-semibold leading-snug md:text-xl;
+}
+
+.content .programme-event time {
+  @apply whitespace-nowrap;
+}
+
 /* tab */
 .tab {
   @apply overflow-hidden rounded-lg border border-border;
