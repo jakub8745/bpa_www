@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "name": "About",
+      "url": "/about"
+    },
+    {
       "name": "Archive [beta]",
       "url": "https://archive.bluepointart.uk/"
     },

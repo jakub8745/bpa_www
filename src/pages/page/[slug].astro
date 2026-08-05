@@ -4,11 +4,14 @@ import Base from "@/layouts/Base.astro";
 import Pagination from "@/layouts/components/Pagination.astro";
 import Posts from "@/layouts/Posts.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { showPostOnHome } from "@/lib/utils/postVisibility";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 
 export async function getStaticPaths() {
   const posts = await getSinglePage("posts");
-  const totalPages = Math.ceil(posts.length / config.settings.pagination);
+  const totalPages = Math.ceil(
+    posts.filter(showPostOnHome).length / config.settings.pagination,
+  );
   const paths = [];
 
   for (let i = 1; i < totalPages; i++) {
@@ -23,8 +26,9 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const posts = await getSinglePage("posts");
-const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
+const homePosts = posts.filter(showPostOnHome);
+const sortedPosts = sortByDate(homePosts);
+const totalPages = Math.ceil(homePosts.length / config.settings.pagination);
 const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
 const indexOfLastPost = currentPage * config.settings.pagination;
 const indexOfFirstPost = indexOfLastPost - config.settings.pagination;

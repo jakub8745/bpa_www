@@ -80,9 +80,9 @@ const isCurrentPath = (url: string) => {
               <>
                 {menu.hasChildren ? (
                   <li class="nav-item nav-dropdown relative group">
-                    <!-- checkbox toggle instead of radio -->
                     <input
-                      type="checkbox"
+                      type="radio"
+                      name="primary-submenu"
                       id={`toggle-${menuId}`}
                       class="peer hidden"
                     />
