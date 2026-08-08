@@ -16,7 +16,7 @@
 }
 
 .nav-link {
-  @apply flex w-full items-center justify-between rounded-none px-4 py-4 text-base font-semibold text-dark transition hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-primary)] md:inline-flex md:w-auto md:justify-start md:rounded-md md:p-4 md:text-xs md:hover:bg-light md:hover:text-primary;
+  @apply flex w-full items-center justify-between rounded-none px-4 py-4 text-base font-semibold text-dark transition hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-primary)] md:inline-flex md:w-auto md:justify-start md:rounded-md md:p-4 md:text-lg md:hover:bg-light md:hover:text-primary;
 }
 
 .nav-link.is-active {
