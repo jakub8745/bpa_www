@@ -5,7 +5,7 @@ image: "/images/posts/imponderabilia_header.jpg"
 date: 2026-06-21T00:00:00+01:00
 draft: false
 lead: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["imponderabilia", "literatura", "sztuka wizualna", "POSK Gallery", "Londyn"]
 categories: ["Exhibition", "Educational"]
 ---

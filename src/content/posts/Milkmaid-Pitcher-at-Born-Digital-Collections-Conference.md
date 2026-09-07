@@ -4,7 +4,7 @@ description: "Milkmaid's pitcher explores the intersection of born-digital narra
 date: 2025-03-28T14:30:47+06:00
 image: "/images/posts/snapshot_pitcher00109.png"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Milkmaid's pitcher", "Born-Digital", "virtual installations", "AR", "NFT", "Born-Digital Collections, Archives & Memory", "The School of Advanced Study (SAS)", "University of London"]
 categories: ["AR", "Digital Art", "Conference Presentation"]
 ---

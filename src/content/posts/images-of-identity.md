@@ -4,7 +4,7 @@ description: "meta description"
 date: 2020-12-18T06:00:00+00:00
 image: "/images/posts/IdentityInBluePointArt06.jpg"
 categories: ["Exhibition"]
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["visual arts", "interdisciplinary", "humanities and social sciences", "Images of Identity", "PUNO", "Wydział Sztuki Uniwersytetu Pedagogicznego w Krakowie", "Exhibition", "3D"]
 draft: false
 ---

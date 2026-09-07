@@ -5,7 +5,7 @@ date: 2025-11-29T00:00:00+00:00
 image: "/images/posts/LivingHeritageLisbon.jpg"
 image_link: "https://archive.bluepointart.uk/#videopoem_lisbon_112025"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "videopoetry",

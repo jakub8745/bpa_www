@@ -5,7 +5,7 @@ date: 2026-06-08T00:00:00+01:00
 image: "/images/posts/Cracks-of-Meaning-in-the-BPAA.jpg"
 image_link: "https://archive.bluepointart.uk/"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "Blue Point Art Archive",

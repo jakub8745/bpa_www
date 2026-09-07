@@ -4,7 +4,7 @@ description: "Ten Years & Counting – Martin Taylor's Solo Retrospective Exhibi
 date: 2025-03-14T12:56:47+06:00
 image: "/images/posts/tenyearsandcounting-martintaylor-exhibit.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Martin Taylor", "Solo Retrospective Exhibition", "Paintings", "POSK Gallery", "ZPPnO"]
 categories: ["Paintings", "not virtual", "solo exhibition"]
 ---

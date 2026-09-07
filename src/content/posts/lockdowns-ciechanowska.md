@@ -4,7 +4,7 @@ description: "meta description"
 date: 2020-08-15T05:00:00Z
 image: ""
 categories: ["Exhibition"]
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Joanna Ciechanowska", "Lockdowns", "art", "Exhibition", "3D"]
 draft: false
 ---

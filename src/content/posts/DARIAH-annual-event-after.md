@@ -4,7 +4,7 @@ description: "meta description"
 date: 2024-06-21T16:56:47+06:00
 image: "/images/posts/dariah-poster-jaroslaw_solecki.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["DARIAH", "Workflow", "Lisbon", "2024", "Reproducible Artistic Research"]
 categories: ["presentation", "conference"]
 ---

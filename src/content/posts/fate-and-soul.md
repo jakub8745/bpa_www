@@ -4,7 +4,7 @@ description: "meta description"
 date: 2022-10-05T16:56:47+06:00
 image: "/images/posts/fate-and-soul-exhibit.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Stanisław Vincenz", "Educational exhibition", "Dialogue on Fate and Soul", "Jan Choroszy", "Hutsul Region", "Jakub Żmidziński"]
 categories: ["Exhibition", "educational"]
 ---

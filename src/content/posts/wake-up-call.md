@@ -4,7 +4,7 @@ description: "meta description"
 date: 2020-11-20T05:00:00Z
 image: "/images/posts/wakeUpCall.jpg"
 categories: ["Exhibition"]
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Exhibition", "3D", "wakeup call", "11th Virtual Biennale Prague 2020", "PUNO"]
 draft: false
 ---

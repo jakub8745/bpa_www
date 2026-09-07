@@ -4,7 +4,7 @@ description: "meta description"
 date: 2023-06-29T05:00:00Z
 image: ""
 categories: ["photography", "Exhibition", "educational"]
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Vincenz", "Lidio Cipriani", "Hutsul region", "ethnographic", "documentation", "photography", "educational", "Exhibition" , "3D"]
 
 draft: false

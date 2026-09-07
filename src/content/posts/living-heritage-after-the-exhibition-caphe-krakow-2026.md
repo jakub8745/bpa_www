@@ -5,7 +5,7 @@ date: 2026-06-04T00:00:00+01:00
 image: "/images/posts/Living Heritage.jpg"
 image_link: "https://archive.bluepointart.uk/#videopoem_lisbon_112025"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "CAPHE",

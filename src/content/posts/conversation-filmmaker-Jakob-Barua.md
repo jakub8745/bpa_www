@@ -5,7 +5,7 @@ date: 2026-02-16T22:28:47+06:00
 image: "/images/posts/lodz_to_nairobi_Jakob_Barua.jpg"
 lead: true
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["CAPHE","Virtual Film Memorial - project", "Jakob Barua", "Centre for Polish Migration Heritage (OBeDeP)", "Polish Writers Abroad Charity"]
 categories: ["3d exhibitions", "heritage", "educational"]
 ---

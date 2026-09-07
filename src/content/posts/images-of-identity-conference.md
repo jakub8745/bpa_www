@@ -4,7 +4,7 @@ description: "meta description"
 date: 2020-12-02T06:00:00+00:00
 image: "/images/posts/Identity_konfer.jpg"
 categories: ["conference"]
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["conference", "Tożsamość", "Identity", "PUNO", "Wydział Sztuki Uniwersytetu Pedagogicznego w Krakowie"]
 draft: false
 ---

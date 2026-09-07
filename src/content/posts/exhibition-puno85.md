@@ -4,7 +4,7 @@ description: "This page is currently under maintenance."
 date: 2025-05-15T16:56:47+06:00
 image: "/images/posts/puno85.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["PUNO","Polish University Abroad", "85-lecie PUNO*", "3d exhibitions", "virtual exposition", "in London"]
 categories: ["3d exhibitions", "heritage", "educational"]
 ---

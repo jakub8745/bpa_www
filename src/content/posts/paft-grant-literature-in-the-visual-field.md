@@ -4,7 +4,7 @@ description: "Blue Point Art has received a £500 PAFT grant supporting the firs
 date: 2026-07-16T00:00:00+01:00
 image: "/images/posts/imponderabilia_header_paft.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "PAFT",

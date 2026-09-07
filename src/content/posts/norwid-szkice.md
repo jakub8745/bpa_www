@@ -4,7 +4,7 @@ description: "meta description"
 date: 2021-04-01T16:56:47+06:00
 image: ""
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["educational", "Exhibition" , "3D", "Cyprian Norwid", "szkice"]
 categories: ["educational", "Exhibition"]
 ---

@@ -4,7 +4,7 @@ description: "meta description"
 date: 2022-07-02T16:56:47+06:00
 image: "/images/posts/DystopiaOfImitation_web.jpg"
 draft: false
-authors: ["Jaroslaw Solecki", "Justyna Gorzkowicz"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Dystopia of Imitation", "Metavers"]
 categories: ["Art Installation"]
 ---

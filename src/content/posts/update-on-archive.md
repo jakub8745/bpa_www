@@ -4,7 +4,7 @@ description: "meta description"
 date: 2024-11-13T16:56:47+06:00
 image: "/images/posts/archive_beta1.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Workflow", "Beta 1.0 Released", "Reproducible Artistic Research", "Archive"]
 categories: ["presentation"]
 ---

@@ -4,7 +4,7 @@ description: "Relacja z londyńskiego sympozjum poświęconego Stanisławowi Mł
 date: 2026-04-19T10:00:00+01:00
 image: "/images/posts/mlodozeniec_jednodniowka_post.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "Stanisław Młodożeniec",

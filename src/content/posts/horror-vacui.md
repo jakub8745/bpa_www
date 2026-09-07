@@ -14,7 +14,7 @@ There’s another update: I’ve changed my approach to the Gallery Archive. The
 
 <video width="100%" controls loop autoPlay muted>
   <source
-    src="https://bafybeid4eaubfwsw5gnrp77zekrtleyaepnkxtvq4dnc3wdwjoedmbuy3e.ipfs.w3s.link/"
+    src="/media/ipfs/horror-vacui.mp4"
     type="video/mp4"
   />
   Your browser does not support the video tag.

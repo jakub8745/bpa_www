@@ -4,7 +4,7 @@ description: "meta description"
 date: 2025-09-15T16:56:47+06:00
 image: "/images/posts/ARtourPhoto1200.jpg"
 draft: true
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags: ["Krystyna Bednarczyk","HERITAGE FUND UK", "3d objects", "AR Heritage Tour App", "Felix Topolski"]
 categories: ["AR/XR", "heritage", "educational"]
 ---

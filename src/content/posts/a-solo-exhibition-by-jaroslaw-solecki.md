@@ -4,7 +4,7 @@ description: "Imponderabilia brings together installation, video and sculpture t
 date: 2026-07-28T00:00:00+01:00
 image: "/images/posts/jaroslaw-solecki-imponderabilia-poster.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz", "Jaroslaw Solecki"]
+authors: ["Jaroslaw Solecki"]
 tags:
   [
     "Jarosław Solecki",

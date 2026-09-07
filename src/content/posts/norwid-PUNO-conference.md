@@ -4,7 +4,7 @@ description: "meta description"
 date: 2021-01-04T16:56:47+06:00
 image: "/images/posts/norwid-konferencja-PUNO.jpg"
 draft: false
-authors: ["Justyna Gorzkowicz"]
+authors: ["Jaroslaw Solecki"]
 tags: ["PUNO", "XIth Annual April Conference", "Part of The Norwid Project", "Cyprian Norwid"]
 categories: ["Conference", "educational"]
 ---
