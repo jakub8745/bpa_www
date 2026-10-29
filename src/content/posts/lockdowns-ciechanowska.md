@@ -17,7 +17,7 @@ Lets meet Joanna Ciechanowska
 The bilingual publication, containing a longer theoretical and curatorial text and an album with the artist’s works: Justyna Gorzkowicz, Towards rediscovery: LOCKDOWNS – Joanna Ciechanowska  / W stronę ponownego odkrycia: LOCKDOWNS – Joanna Ciechanowska
 Full version of the book will come soon at PUNO Press.
 
-[EXCERPT FROM CONTENTS / WYBÓR ZAWARTOŚCI – Free PDF](https://bafybeie4p55kauy6ejabn6dko3myb355isvzi6cnse37auzoupsdzh4q6m.ipfs.w3s.link/)
+[EXCERPT FROM CONTENTS / WYBÓR ZAWARTOŚCI – Free PDF](/documents/Towards-rediscoveryLockdowns_JoannaCiechanowska.pdf)
 
 <div class="flex items-center justify-center">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/hSF4PP65feU" title="Joanna Ciechanowska - LOCKDOWNS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
